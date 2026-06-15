@@ -239,17 +239,49 @@ p:last-child { margin-bottom: 0; }
 .back-to-top:hover { background: var(--red); text-decoration: none; color: #fff; }
 
 /* ===== Responsive ===== */
+
+/* Tablet and below */
 @media (max-width: 860px) {
   .nav__links { display: none; }
   .nav__toggle { display: flex; }
-  .nav__inner { justify-content: space-between; padding: 0 0.5rem; height: auto; min-height: 36px; }
-  .content-area { padding: 0.75rem 1rem; }
-  .nugget img { max-width: 140px; }
-  .alert-bar { flex-direction: column; text-align: center; }
-  .footer-logos { flex-direction: column; }
+  .nav__inner { justify-content: space-between; padding: 0 0.75rem; height: auto; min-height: 44px; }
+  .content-area { padding: 1rem; }
+  .nugget img { max-width: 160px; margin-right: 10px; }
+  .alert-bar { flex-direction: column; text-align: center; gap: 4px; }
+  .footer-logos { flex-direction: column; gap: 12px; }
+  .footer-logos p { font-size: 0.8rem; }
+  .quick-links__row a { font-size: 0.9rem; }
+  .section-header { font-size: 1rem; }
 }
 
-@media (max-width: 480px) {
-  .nugget img { float: none; max-width: 100%; margin-right: 0; margin-bottom: 8px; }
+/* Small tablets and large phones */
+@media (max-width: 640px) {
+  .nugget img { max-width: 130px; margin-right: 8px; }
+  .nugget h3 { font-size: 1rem; }
+  .nugget p { font-size: 0.875rem; }
+  .news-item { font-size: 0.875rem; }
+  .alert-heading { font-size: 1rem; }
+  .content-area { text-align: left; }
+  /* Justified text is hard to read on phones */
   .video-container { max-width: 100%; }
+  .quick-links__title { font-size: 0.9rem; }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .content-area { padding: 0.75rem; }
+  .nugget img { float: none; max-width: 100%; margin-right: 0; margin-bottom: 8px; }
+  .nugget h3 { font-size: 0.95rem; }
+  .nugget p { font-size: 0.85rem; line-height: 1.5; }
+  .pub-ref { font-size: 0.75rem; }
+  .section-header { font-size: 0.95rem; padding: 5px 8px; }
+  .alert-bar { padding: 6px 8px; }
+  .alert-heading { font-size: 0.95rem; }
+  .quick-links__row a { font-size: 0.85rem; }
+  .quick-links__title { font-size: 0.85rem; }
+  .news-item { font-size: 0.85rem; padding-bottom: 6px; }
+  .news-date { display: block; margin-bottom: 2px; }
+  .load-more { font-size: 0.85rem; padding: 10px; }
+  .footer-logos p { font-size: 0.75rem; }
+  .back-to-top { bottom: 1rem; right: 1rem; width: 40px; height: 40px; font-size: 1.1rem; }
 }
