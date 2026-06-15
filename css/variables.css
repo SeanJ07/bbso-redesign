@@ -1,13 +1,19 @@
-/* ===== BBSO — Tokens ===== */
+/* ===== BBSO Mobile-Fix — Tokens ===== */
 :root {
-  --bg: #faf8f0;
-  --bg-raised: #ffffff;
-  --text: #3d3d3d;
-  --text-bright: #1a1a1a;
-  --text-muted: #6b6b6b;
-  --accent: #e86700;
-  --border: #e0dccb;
-  --font: 'Inter', system-ui, -apple-system, sans-serif;
-  --max-w: 1100px;
-  --radius: 8px;
+  /* Match original site colors */
+  --bg: #737362;             /* Original body bg */
+  --bg-content: #ebeccd;     /* Original nav/content bg */
+  --bg-white: #ffffff;        /* Content iframe bg */
+  --red: #990000;             /* Original header/banner red */
+  --red-dark: #7a0000;
+  --nav-bg: #000000;          /* Original nav black */
+  --text: #000000;
+  --text-light: #ffffff;
+  --text-muted: #333333;
+  --link: #ffffff;
+  --border: #666666;
+
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --max-w: 860px;
+  --radius: 4px;
 }

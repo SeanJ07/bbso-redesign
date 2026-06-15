@@ -1,42 +1,40 @@
-/* ===== BBSO — Hero ===== */
+/* ===== BBSO Mobile-Fix — Hero ===== */
+
+/* Hero is the red banner area — we keep it simple like original */
 .hero {
-  position: relative; min-height: 85vh;
-  display: flex; align-items: center;
-  padding-top: 64px; overflow: hidden;
-  background: var(--text-bright);
+  background: var(--bg);
 }
 
-.hero__bg { position: absolute; inset: 0; z-index: 0; }
-.hero__bg img { width: 100%; height: 100%; object-fit: cover; }
-.hero__bg::after {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%);
+.hero__banner {
+  max-width: var(--max-w);
+  margin: 0 auto;
 }
 
+.hero__banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content area — light bg like original */
 .hero__content {
-  position: relative; z-index: 1;
-  max-width: var(--max-w); margin: 0 auto; padding: 5rem 1.5rem; width: 100%;
+  background: var(--bg-content);
+  padding: 1rem;
 }
 
-.hero__title { max-width: 14ch; margin-bottom: 1.5rem; color: #fff; }
-.hero__title span { color: var(--accent); }
-
-.hero__desc {
-  color: rgba(255,255,255,0.7); font-size: 1.125rem;
-  max-width: 48ch; margin-bottom: 2rem;
+.hero__welcome {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 0.5rem;
 }
 
-.hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
-
-.hero__stats {
-  display: flex; gap: 3rem; margin-top: 4rem;
-  padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15);
+.hero__text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
 }
-
-.hero__stat-value { font-size: 1.5rem; font-weight: 700; color: var(--accent); display: block; }
-.hero__stat-label { font-size: 0.875rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem; }
 
 @media (max-width: 767px) {
-  .hero { min-height: 75vh; }
-  .hero__stats { gap: 2rem; flex-wrap: wrap; }
+  .hero__content { padding: 0.75rem; }
 }

@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Big Bear Solar Observatory — NJIT, home of the Goode Solar Telescope. Research, tours, and real-time solar observations.">
   <title>Big Bear Solar Observatory</title>
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
@@ -11,20 +10,26 @@
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background:var(--bg);">
   <a href="#main" class="skip-link">Skip to main content</a>
 
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner__inner">
+      <a href="index.html"><img class="banner__img" src="https://www.bbso.njit.edu/Icons/banner.png" alt="Big Bear Solar Observatory" width="848" height="113"></a>
+    </div>
+  </div>
+
+  <!-- Nav -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__brand" aria-label="BBSO home"><span>BBSO</span></a>
       <div class="nav__links">
         <a href="index.html" class="nav__link nav__link--active">Home</a>
         <a href="tours.html" class="nav__link">Tours</a>
         <a href="research.html" class="nav__link">Research</a>
-        <a href="about.html" class="nav__link">About</a>
+        <a href="about.html" class="nav__link">About BBSO</a>
         <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
       </div>
       <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
@@ -35,109 +40,57 @@
       <a href="index.html" class="nav__link nav__link--active">Home</a>
       <a href="tours.html" class="nav__link">Tours</a>
       <a href="research.html" class="nav__link">Research</a>
-      <a href="about.html" class="nav__link">About</a>
+      <a href="about.html" class="nav__link">About BBSO</a>
       <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
     </div>
   </nav>
 
-  <section class="hero" aria-label="Welcome">
-    <div class="hero__bg">
-      <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_4096_0171.jpg" alt="Solar corona in extreme ultraviolet" loading="eager">
+  <main id="main" style="background:var(--bg-content);">
+    <div class="content-area">
+
+      <p style="font-size:0.95rem;font-weight:bold;margin-bottom:0.5rem;">Welcome to BBSO</p>
+      <p style="font-size:0.85rem;color:#333;line-height:1.6;margin-bottom:1rem;">The Big Bear Solar Observatory operates the Goode Solar Telescope, one of the world's premier instruments for high-resolution solar observations, situated above the clear skies of Big Bear Lake, California.</p>
+
+      <div style="background:#fff;border:1px solid #999;padding:0.75rem;margin-bottom:1rem;">
+        <p style="font-size:0.95rem;font-weight:bold;color:#990000;margin-bottom:0.5rem;">2026 BBSO Tours</p>
+        <p style="font-size:0.85rem;color:#333;">Free guided tours on select Wednesdays, 2 PM, May through September. <strong>All 2026 tours are currently fully booked.</strong></p>
+        <p style="margin-top:0.5rem;"><a href="tours.html" style="color:#990000;font-weight:bold;">See tour dates &rarr;</a></p>
+      </div>
+
+      <p style="font-size:0.95rem;font-weight:bold;margin-bottom:0.5rem;margin-top:1.5rem;">Research Highlights</p>
+      <div class="grid grid--3" style="margin-bottom:1.5rem;">
+        <div class="card">
+          <p class="card__title">Solar Flares & CMEs</p>
+          <p class="card__text">Studying the origins and evolution of solar flares and coronal mass ejections.</p>
+          <p><a href="research.html" style="color:#990000;font-size:0.8rem;">More &rarr;</a></p>
+        </div>
+        <div class="card">
+          <p class="card__title">GST Instrumentation</p>
+          <p class="card__text">The 1.6m Goode Solar Telescope provides diffraction-limited solar observations.</p>
+          <p><a href="research.html" style="color:#990000;font-size:0.8rem;">More &rarr;</a></p>
+        </div>
+        <div class="card">
+          <p class="card__title">Coronal Rain</p>
+          <p class="card__text">Observing condensation and precipitation in the million-degree solar corona.</p>
+          <p><a href="research.html" style="color:#990000;font-size:0.8rem;">More &rarr;</a></p>
+        </div>
+      </div>
+
+      <p style="font-size:0.95rem;font-weight:bold;margin-bottom:0.5rem;">Live Solar Observations</p>
+      <p style="font-size:0.85rem;color:#333;margin-bottom:0.5rem;">Watch the Sun in near real-time through BBSO's full-disk H-alpha telescope.</p>
+      <p><a href="https://www.bbso.njit.edu/bbso_webcams.html" style="color:#990000;font-weight:bold;" target="_blank" rel="noopener">View Webcam &rarr;</a></p>
+
     </div>
-    <div class="hero__content">
-      <h1 class="hero__title">Watching the <span>Sun</span></h1>
-      <p class="hero__desc">The Big Bear Solar Observatory operates the Goode Solar Telescope, one of the world's premier instruments for high-resolution solar observations, above the clear skies of Big Bear Lake.</p>
-      <div class="hero__actions">
-        <a href="tours.html" class="btn btn--primary">Book a Tour</a>
-        <a href="research.html" class="btn btn--outline">Research</a>
-      </div>
-      <div class="hero__stats">
-        <div><span class="hero__stat-value">1.6m</span><span class="hero__stat-label">Goode Solar Telescope</span></div>
-        <div><span class="hero__stat-value">55+</span><span class="hero__stat-label">Years of Observation</span></div>
-        <div><span class="hero__stat-value">2,000+</span><span class="hero__stat-label">Publications</span></div>
-      </div>
-    </div>
-  </section>
-
-  <main id="main">
-    <section class="section container" aria-labelledby="tours-heading">
-      <div class="cta">
-        <p class="cta__tag">2026 Season</p>
-        <h2 id="tours-heading" class="cta__title">Visit the Observatory</h2>
-        <p class="cta__text">Walk among world-class solar telescopes on the shores of Big Bear Lake. Free tours on select Wednesdays, 2 PM, May through September.</p>
-        <div class="cta__details">
-          <div><span class="cta__detail-value">Free</span><span class="cta__detail-label">Admission</span></div>
-          <div><span class="cta__detail-value">1 Hour</span><span class="cta__detail-label">Duration</span></div>
-          <div><span class="cta__detail-value">Select Wed.</span><span class="cta__detail-label">May &ndash; Sep</span></div>
-        </div>
-        <a href="tours.html" class="btn btn--primary">See Tour Dates</a>
-      </div>
-    </section>
-
-    <section class="section section--alt" aria-labelledby="research-heading">
-      <div class="container">
-        <div class="section__header">
-          <p class="section__tag">Research</p>
-          <h2 id="research-heading" class="section__title">Advancing Solar Science</h2>
-          <p class="section__desc">From solar flares to coronal rain, BBSO researchers study the dynamic Sun with unprecedented resolution.</p>
-        </div>
-        <div class="grid grid--3">
-          <a href="research.html" class="card">
-            <h3 class="card__title">Solar Flares & CMEs</h3>
-            <p class="card__text">Studying the origins and evolution of solar flares and coronal mass ejections that impact space weather.</p>
-          </a>
-          <a href="research.html" class="card">
-            <h3 class="card__title">GST Instrumentation</h3>
-            <p class="card__text">The 1.6m Goode Solar Telescope provides diffraction-limited observations of the solar surface.</p>
-          </a>
-          <a href="research.html" class="card">
-            <h3 class="card__title">Coronal Rain</h3>
-            <p class="card__text">Observing condensation and precipitation in the million-degree solar corona.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" aria-labelledby="webcam-heading">
-      <div class="split">
-        <div>
-          <img src="https://www.bbso.njit.edu/webcam/latest_full.jpg" alt="Current full-disk solar observation from BBSO" loading="lazy" onerror="this.style.background='var(--bg-raised)';this.alt='Webcam unavailable'" style="width:100%;border-radius:var(--radius);border:1px solid var(--border);aspect-ratio:16/9;object-fit:cover;background:var(--bg-raised);">
-        </div>
-        <div>
-          <h2 id="webcam-heading">Live Solar Observations</h2>
-          <p>Watch the Sun in near real-time through BBSO's full-disk H-alpha telescope.</p>
-          <p style="margin-top:1.5rem;"><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="btn btn--outline" target="_blank" rel="noopener">View Webcam</a></p>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <p class="footer__brand"><span>BBSO</span></p>
-          <p class="footer__desc">Operated by NJIT, conducting solar research above Big Bear Lake, California.</p>
-        </div>
-        <div>
-          <p class="footer__heading">Visit</p>
-          <nav class="footer__links"><a href="tours.html" class="footer__link">Tours</a><a href="about.html" class="footer__link">History</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a></nav>
-        </div>
-        <div>
-          <p class="footer__heading">Research</p>
-          <nav class="footer__links"><a href="research.html" class="footer__link">Projects</a><a href="research.html" class="footer__link">Instrumentation</a><a href="research.html" class="footer__link">Publications</a></nav>
-        </div>
-        <div>
-          <p class="footer__heading">Organization</p>
-          <nav class="footer__links"><a href="about.html" class="footer__link">About</a><a href="about.html#people" class="footer__link">People</a><a href="about.html#partners" class="footer__link">Partners</a></nav>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 Big Bear Solar Observatory &middot; NJIT</p>
-        <p class="footer__funding">Supported by NSF AGS-2309939 and NJIT. GST partly supported by KASI and Seoul National University.</p>
-      </div>
+  <!-- Footer -->
+  <div style="background:var(--bg-content);">
+    <div class="content-area" style="border-top:1px solid #999;padding-top:0.75rem;">
+      <p style="font-size:0.7rem;color:#666;"><strong>Acknowledgements:</strong> BBSO operation is supported by US NSF AGS-2309939 grant and New Jersey Institute of Technology. GST operation is partly supported by the Korea Astronomy and Space Science Institute and the Seoul National University.</p>
+      <p style="font-size:0.7rem;color:#666;margin-top:0.25rem;">&copy; 2026 Big Bear Solar Observatory &middot; NJIT</p>
     </div>
-  </footer>
+  </div>
+
   <script src="js/nav.js"></script>
 </body>
 </html>

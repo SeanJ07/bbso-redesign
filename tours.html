@@ -3,28 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Visit the Big Bear Solar Observatory — free public tours on select Wednesdays, May through September.">
   <title>Tours — Big Bear Solar Observatory</title>
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/pages.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background:var(--bg);">
   <a href="#main" class="skip-link">Skip to main content</a>
+
+  <div class="banner"><div class="banner__inner"><a href="index.html"><img class="banner__img" src="https://www.bbso.njit.edu/Icons/banner.png" alt="Big Bear Solar Observatory" width="848" height="113"></a></div></div>
 
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__brand"><span>BBSO</span></a>
       <div class="nav__links">
         <a href="index.html" class="nav__link">Home</a>
         <a href="tours.html" class="nav__link nav__link--active">Tours</a>
         <a href="research.html" class="nav__link">Research</a>
-        <a href="about.html" class="nav__link">About</a>
+        <a href="about.html" class="nav__link">About BBSO</a>
         <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
       </div>
       <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
@@ -35,26 +32,25 @@
       <a href="index.html" class="nav__link">Home</a>
       <a href="tours.html" class="nav__link nav__link--active">Tours</a>
       <a href="research.html" class="nav__link">Research</a>
-      <a href="about.html" class="nav__link">About</a>
+      <a href="about.html" class="nav__link">About BBSO</a>
       <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
     </div>
   </nav>
 
-  <section class="page-header">
-    <div class="container">
-      <p class="page-header__tag">Visit Us</p>
-      <h1 class="page-header__title">Public Tours</h1>
-      <p class="page-header__desc">Walk among world-class solar telescopes on the shores of Big Bear Lake. Free guided tours give you an inside look at solar research.</p>
-    </div>
-  </section>
+  <div class="page-header">
+    <p class="page-header__tag">Visit Us</p>
+    <h1 class="page-header__title">Public Tours</h1>
+    <p class="page-header__desc">Walk among world-class solar telescopes on the shores of Big Bear Lake. Free guided tours give you an inside look at solar research.</p>
+  </div>
 
-  <main id="main">
-    <section class="section container" aria-label="Tour availability">
+  <main id="main" style="background:var(--bg-content);">
+    <div class="content-area">
+
       <div class="alert">
-        <p class="alert__text"><strong>All 2026 tours are currently fully booked.</strong> Cancellations may open spots. Check the <a href="https://forms.gle/bbso-tours" target="_blank" rel="noopener">online form</a> regularly, or call <a href="tel:9098665791">909-866-5791 ext. 210</a>.</p>
+        <strong>All 2026 tours are currently fully booked.</strong> Cancellations may open spots. Check the <a href="https://forms.gle/bbso-tours" target="_blank" rel="noopener">online form</a> regularly, or call <a href="tel:9098665791" style="color:#990000;">909-866-5791 ext. 210</a>.
       </div>
 
-      <div class="info-cards">
+      <div class="info-cards" style="margin-bottom:1.5rem;">
         <div class="info-card">
           <div class="info-card__value">Free</div>
           <div class="info-card__label">Admission</div>
@@ -68,12 +64,10 @@
           <div class="info-card__label">Location</div>
         </div>
       </div>
-    </section>
 
-    <section class="section container" aria-labelledby="dates-heading">
-      <div class="dates-table">
+      <div class="dates-table" style="margin-bottom:1.5rem;">
         <div class="dates-table__head">
-          <h2 id="dates-heading" class="dates-table__title">2026 Tour Dates</h2>
+          <span class="dates-table__title">2026 Tour Dates</span>
           <span class="dates-table__badge">All Full</span>
         </div>
         <table>
@@ -89,61 +83,41 @@
           </tbody>
         </table>
       </div>
-    </section>
 
-    <section class="section section--alt" aria-labelledby="info-heading">
-      <div class="container">
-        <div class="section__header">
-          <p class="section__tag">Before You Visit</p>
-          <h2 id="info-heading" class="section__title">What to Know</h2>
+      <p style="font-size:0.95rem;font-weight:bold;margin-bottom:0.5rem;margin-top:1.5rem;">What to Know</p>
+
+      <div class="grid grid--2" style="margin-bottom:1.5rem;">
+        <div class="card">
+          <p class="card__title">Physical Requirements</p>
+          <p class="card__text">Visitors must walk 1,000 feet on a gravel road and navigate three flights of stairs to access the telescope. Not recommended for children under 5.</p>
         </div>
-        <div class="grid grid--2">
-          <div class="card">
-            <h3 class="card__title">Physical Requirements</h3>
-            <p class="card__text">Visitors must walk 1,000 feet on a gravel road and navigate three flights of stairs to access the telescope. Not recommended for children under 5.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Finding the Observatory</h3>
-            <p class="card__text">Half a mile west of the Big Bear Discovery Center on Hwy 38 (North Shore Drive). Private property; visits are by guided tour only.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Donations Welcome</h3>
-            <p class="card__text">Tours are free, but donations are strongly encouraged to support public outreach and docent programs.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Can't Make It?</h3>
-            <p class="card__text">Watch the Sun in near real-time through our <a href="https://www.bbso.njit.edu/bbso_webcams.html" target="_blank" rel="noopener">live webcam</a>, or explore virtual tours.</p>
-          </div>
+        <div class="card">
+          <p class="card__title">Finding the Observatory</p>
+          <p class="card__text">Half a mile west of the Big Bear Discovery Center on Hwy 38 (North Shore Drive). Private property; visits by guided tour only.</p>
+        </div>
+        <div class="card">
+          <p class="card__title">Donations Welcome</p>
+          <p class="card__text">Tours are free, but donations are strongly encouraged to support outreach and docent programs.</p>
+        </div>
+        <div class="card">
+          <p class="card__title">Can't Make It?</p>
+          <p class="card__text">Watch the Sun in near real-time through our <a href="https://www.bbso.njit.edu/bbso_webcams.html" target="_blank" rel="noopener" style="color:#990000;">live webcam</a>.</p>
         </div>
       </div>
-    </section>
 
-    <section class="section container" aria-labelledby="contact-heading">
-      <div class="cta">
-        <p class="cta__tag">Questions?</p>
-        <h2 id="contact-heading" class="cta__title">Get in Touch</h2>
-        <p class="cta__text">For tour inquiries, cancellations, or group bookings, contact the BBSO office.</p>
-        <div class="cta__details">
-          <div><span class="cta__detail-value">909-866-5791</span><span class="cta__detail-label">ext. 210</span></div>
-        </div>
-      </div>
-    </section>
+      <p style="font-size:0.95rem;font-weight:bold;margin-bottom:0.25rem;">Questions?</p>
+      <p style="font-size:0.85rem;color:#333;">Call <strong style="color:#990000;">909-866-5791 ext. 210</strong></p>
+
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div><p class="footer__brand"><span>BBSO</span></p><p class="footer__desc">Operated by NJIT, conducting solar research above Big Bear Lake, California.</p></div>
-        <div><p class="footer__heading">Visit</p><nav class="footer__links"><a href="tours.html" class="footer__link">Tours</a><a href="about.html" class="footer__link">History</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a></nav></div>
-        <div><p class="footer__heading">Research</p><nav class="footer__links"><a href="research.html" class="footer__link">Projects</a><a href="research.html" class="footer__link">Instrumentation</a><a href="research.html" class="footer__link">Publications</a></nav></div>
-        <div><p class="footer__heading">Organization</p><nav class="footer__links"><a href="about.html" class="footer__link">About</a><a href="about.html#people" class="footer__link">People</a><a href="about.html#partners" class="footer__link">Partners</a></nav></div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 Big Bear Solar Observatory &middot; NJIT</p>
-        <p class="footer__funding">Supported by NSF AGS-2309939 and NJIT. GST partly supported by KASI and Seoul National University.</p>
-      </div>
+  <div style="background:var(--bg-content);">
+    <div class="content-area" style="border-top:1px solid #999;padding-top:0.75rem;">
+      <p style="font-size:0.7rem;color:#666;"><strong>Acknowledgements:</strong> BBSO operation is supported by US NSF AGS-2309939 grant and NJIT. GST operation is partly supported by KASI and Seoul National University.</p>
+      <p style="font-size:0.7rem;color:#666;margin-top:0.25rem;">&copy; 2026 Big Bear Solar Observatory &middot; NJIT</p>
     </div>
-  </footer>
+  </div>
+
   <script src="js/nav.js"></script>
 </body>
 </html>
