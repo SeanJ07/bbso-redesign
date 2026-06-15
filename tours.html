@@ -17,24 +17,9 @@
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__brand" aria-label="Big Bear Solar Observatory home">
-        <svg class="nav__brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
-          <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="16" y1="26" x2="16" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="2" y1="16" x2="6" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="26" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="6.1" y1="6.1" x2="8.9" y2="8.9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="23.1" y1="23.1" x2="25.9" y2="25.9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="6.1" y1="25.9" x2="8.9" y2="23.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="23.1" y1="8.9" x2="25.9" y2="6.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <span class="nav__brand-text"><span>BBSO</span></span>
-      </a>
-
+      <a href="index.html" class="nav__brand"><span>BBSO</span></a>
       <div class="nav__links">
         <a href="index.html" class="nav__link">Home</a>
         <a href="tours.html" class="nav__link nav__link--active">Tours</a>
@@ -42,14 +27,12 @@
         <a href="about.html" class="nav__link">About</a>
         <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
       </div>
-
       <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
         <span class="nav__toggle-bar"></span>
         <span class="nav__toggle-bar"></span>
         <span class="nav__toggle-bar"></span>
       </button>
     </div>
-
     <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
       <a href="index.html" class="nav__link">Home</a>
       <a href="tours.html" class="nav__link nav__link--active">Tours</a>
@@ -59,226 +42,128 @@
     </div>
   </nav>
 
-  <!-- Page Header -->
   <section class="page-header">
     <div class="container">
-      <span class="page-header__tag">Visit Us</span>
+      <p class="page-header__tag">Visit Us</p>
       <h1 class="page-header__title">Public Tours</h1>
-      <p class="page-header__description">
-        Walk among world-class solar telescopes on the shores of Big Bear Lake. Our free guided tours give you an inside look at solar research in action.
-      </p>
+      <p class="page-header__desc">Walk among world-class solar telescopes on the shores of Big Bear Lake. Free guided tours give you an inside look at solar research.</p>
     </div>
   </section>
 
   <main id="main">
-
-    <!-- Alert Banner -->
-    <section class="section container--narrow container" aria-label="Tour availability notice">
+    <section class="section container" aria-label="Tour availability notice">
       <div class="alert">
-        <span class="alert__icon" aria-hidden="true">🔴</span>
-        <p class="alert__text">
-          <strong>All 2026 tours are currently fully booked.</strong> Cancellations may open spots. Check the <a href="https://forms.gle/bbso-tours" target="_blank" rel="noopener">online form</a> regularly, or call <a href="tel:9098665791">909-866-5791 ext. 210</a>.
-        </p>
+        <span aria-hidden="true">&#x1F534;</span>
+        <p class="alert__text"><strong>All 2026 tours are currently fully booked.</strong> Cancellations may open spots. Check the <a href="https://forms.gle/bbso-tours" target="_blank" rel="noopener">online form</a> regularly, or call <a href="tel:9098665791">909-866-5791 ext. 210</a>.</p>
       </div>
-    </section>
 
-    <!-- Quick Info Cards -->
-    <section class="section container" aria-label="Tour details">
-      <div class="tour-info">
-        <div class="tour-info-card">
-          <div class="tour-info-card__icon" aria-hidden="true">🎟️</div>
-          <div class="tour-info-card__label">Cost</div>
-          <div class="tour-info-card__value">Free</div>
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-card__icon">&#x1F3AB;</div>
+          <div class="info-card__label">Cost</div>
+          <div class="info-card__value">Free</div>
         </div>
-        <div class="tour-info-card">
-          <div class="tour-info-card__icon" aria-hidden="true">⏱️</div>
-          <div class="tour-info-card__label">Duration</div>
-          <div class="tour-info-card__value">1 Hour</div>
+        <div class="info-card">
+          <div class="info-card__icon">&#x23F1;</div>
+          <div class="info-card__label">Duration</div>
+          <div class="info-card__value">1 Hour</div>
         </div>
-        <div class="tour-info-card">
-          <div class="tour-info-card__icon" aria-hidden="true">📍</div>
-          <div class="tour-info-card__label">Location</div>
-          <div class="tour-info-card__value">Big Bear Lake, CA</div>
+        <div class="info-card">
+          <div class="info-card__icon">&#x1F4CD;</div>
+          <div class="info-card__label">Location</div>
+          <div class="info-card__value">Big Bear Lake, CA</div>
         </div>
       </div>
     </section>
 
-    <!-- Tour Dates -->
     <section class="section container" aria-labelledby="dates-heading">
-      <div class="tour-dates">
-        <div class="tour-dates__header">
-          <h2 id="dates-heading" class="tour-dates__title">2026 Tour Dates</h2>
-          <span class="tour-dates__badge">All Full</span>
+      <div class="dates-table">
+        <div class="dates-table__head">
+          <h2 id="dates-heading" class="dates-table__title">2026 Tour Dates</h2>
+          <span class="dates-table__badge">All Full</span>
         </div>
         <table>
           <thead>
-            <tr>
-              <th>Date</th>
-              <th>Day</th>
-              <th>Time</th>
-              <th>Status</th>
-            </tr>
+            <tr><th>Date</th><th>Day</th><th>Time</th><th>Status</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="tour-dates__date">May 28</td>
-              <td>Wednesday</td>
-              <td>2:00 PM</td>
-              <td><span class="tour-dates__status tour-dates__status--full">Fully Booked</span></td>
-            </tr>
-            <tr>
-              <td class="tour-dates__date">June 11</td>
-              <td>Wednesday</td>
-              <td>2:00 PM</td>
-              <td><span class="tour-dates__status tour-dates__status--full">Fully Booked</span></td>
-            </tr>
-            <tr>
-              <td class="tour-dates__date">July 9</td>
-              <td>Wednesday</td>
-              <td>2:00 PM</td>
-              <td><span class="tour-dates__status tour-dates__status--full">Fully Booked</span></td>
-            </tr>
-            <tr>
-              <td class="tour-dates__date">July 23</td>
-              <td>Wednesday</td>
-              <td>2:00 PM</td>
-              <td><span class="tour-dates__status tour-dates__status--full">Fully Booked</span></td>
-            </tr>
-            <tr>
-              <td class="tour-dates__date">August 6</td>
-              <td>Wednesday</td>
-              <td>2:00 PM</td>
-              <td><span class="tour-dates__status tour-dates__status--full">Fully Booked</span></td>
-            </tr>
-            <tr>
-              <td class="tour-dates__date">August 20</td>
-              <td>Wednesday</td>
-              <td>2:00 PM</td>
-              <td><span class="tour-dates__status tour-dates__status--full">Fully Booked</span></td>
-            </tr>
-            <tr>
-              <td class="tour-dates__date">September 3</td>
-              <td>Wednesday</td>
-              <td>2:00 PM</td>
-              <td><span class="tour-dates__status tour-dates__status--full">Fully Booked</span></td>
-            </tr>
+            <tr><td><strong>May 28</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
+            <tr><td><strong>June 11</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
+            <tr><td><strong>July 9</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
+            <tr><td><strong>July 23</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
+            <tr><td><strong>August 6</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
+            <tr><td><strong>August 20</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
+            <tr><td><strong>September 3</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- What to Know -->
     <section class="section section--alt" aria-labelledby="info-heading">
       <div class="container">
         <div class="section__header">
-          <span class="section__subtitle">Before You Visit</span>
+          <p class="section__tag">Before You Visit</p>
           <h2 id="info-heading" class="section__title">What to Know</h2>
         </div>
-
         <div class="grid grid--2">
           <div class="card">
-            <span class="card__tag">Accessibility</span>
             <h3 class="card__title">Physical Requirements</h3>
-            <p class="card__text">
-              Visitors must be able to walk 1,000 feet down and back on a gravel road, plus navigate three flights of stairs to access the telescope. The tour is not recommended for children under 5.
-            </p>
+            <p class="card__text">Visitors must walk 1,000 feet on a gravel road and navigate three flights of stairs to access the telescope. Not recommended for children under 5.</p>
           </div>
-
           <div class="card">
-            <span class="card__tag">Location</span>
             <h3 class="card__title">Finding the Observatory</h3>
-            <p class="card__text">
-              The observatory is located half a mile west of the Big Bear Discovery Center on Hwy 38 (North Shore Drive). BBSO is private property; visits are by guided tour only.
-            </p>
+            <p class="card__text">Half a mile west of the Big Bear Discovery Center on Hwy 38 (North Shore Drive). The observatory is private property; visits are by guided tour only.</p>
           </div>
-
           <div class="card">
-            <span class="card__tag">Donations</span>
             <h3 class="card__title">Free, Donations Welcome</h3>
-            <p class="card__text">
-              Tours are free of charge, but donations are strongly encouraged to help support public outreach and docent programs.
-            </p>
+            <p class="card__text">Tours are free of charge, but donations are strongly encouraged to support public outreach and docent programs.</p>
           </div>
-
           <div class="card">
-            <span class="card__tag">Virtual</span>
             <h3 class="card__title">Can't Make It?</h3>
-            <p class="card__text">
-              Check out our virtual tours for an online look inside the observatory. You can also watch the Sun in near real-time through our <a href="https://www.bbso.njit.edu/bbso_webcams.html" target="_blank" rel="noopener">live webcam</a>.
-            </p>
+            <p class="card__text">Check out our <a href="https://www.bbso.njit.edu/bbso_webcams.html" target="_blank" rel="noopener">live webcam</a> for near real-time solar observations, or explore our virtual tours.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section class="section container container--narrow" aria-labelledby="contact-heading">
-      <div class="tours-cta">
-        <span class="tours-cta__badge">Questions?</span>
-        <h2 id="contact-heading" class="tours-cta__title">Get in Touch</h2>
-        <p class="tours-cta__text">
-          For tour inquiries, cancellations, or group bookings, contact the BBSO office.
-        </p>
-        <div class="tours-cta__details">
-          <div class="tours-cta__detail">
-            <span class="tours-cta__detail-value">909-866-5791</span>
-            <span class="tours-cta__detail-label">ext. 210</span>
-          </div>
-          <div class="tours-cta__detail">
-            <span class="tours-cta__detail-value">Wednesdays</span>
-            <span class="tours-cta__detail-label">May – Sep 2026</span>
-          </div>
+      <div class="cta">
+        <p class="cta__tag">Questions?</p>
+        <h2 id="contact-heading" class="cta__title">Get in Touch</h2>
+        <p class="cta__text">For tour inquiries, cancellations, or group bookings, contact the BBSO office.</p>
+        <div class="cta__details">
+          <div><span class="cta__detail-value">909-866-5791</span><span class="cta__detail-label">ext. 210</span></div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div>
-          <div class="footer__brand"><span>BBSO</span></div>
-          <p class="footer__desc">
-            The Big Bear Solar Observatory is operated by the New Jersey Institute of Technology, conducting cutting-edge solar research above the clear skies of Big Bear Lake, California.
-          </p>
+          <p class="footer__brand"><span>BBSO</span></p>
+          <p class="footer__desc">Operated by NJIT, conducting solar research above Big Bear Lake, California.</p>
         </div>
         <div>
-          <h3 class="footer__heading">Visit</h3>
-          <nav class="footer__links" aria-label="Visit links">
-            <a href="tours.html" class="footer__link">Public Tours</a>
-            <a href="about.html" class="footer__link">Observatory History</a>
-            <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a>
-            <a href="about.html#contact" class="footer__link">Contact</a>
-          </nav>
+          <p class="footer__heading">Visit</p>
+          <nav class="footer__links"><a href="tours.html" class="footer__link">Tours</a><a href="about.html" class="footer__link">History</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a></nav>
         </div>
         <div>
-          <h3 class="footer__heading">Research</h3>
-          <nav class="footer__links" aria-label="Research links">
-            <a href="research.html" class="footer__link">Projects</a>
-            <a href="research.html" class="footer__link">Instrumentation</a>
-            <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...970L..31T/abstract" class="footer__link" target="_blank" rel="noopener">Publications</a>
-            <a href="research.html" class="footer__link">Data Access</a>
-          </nav>
+          <p class="footer__heading">Research</p>
+          <nav class="footer__links"><a href="research.html" class="footer__link">Projects</a><a href="research.html" class="footer__link">Instrumentation</a><a href="research.html" class="footer__link">Publications</a></nav>
         </div>
         <div>
-          <h3 class="footer__heading">Organization</h3>
-          <nav class="footer__links" aria-label="Organization links">
-            <a href="about.html" class="footer__link">About BBSO</a>
-            <a href="about.html#people" class="footer__link">People</a>
-            <a href="about.html#partners" class="footer__link">Partners</a>
-            <a href="https://www.njit.edu" class="footer__link" target="_blank" rel="noopener">NJIT</a>
-          </nav>
+          <p class="footer__heading">Organization</p>
+          <nav class="footer__links"><a href="about.html" class="footer__link">About</a><a href="about.html#people" class="footer__link">People</a><a href="about.html#partners" class="footer__link">Partners</a></nav>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 Big Bear Solar Observatory &middot; New Jersey Institute of Technology</p>
-        <p class="footer__funding">BBSO operation is supported by US NSF AGS-2309939 grant and NJIT. GST operation is partly supported by KASI and Seoul National University.</p>
+        <p class="footer__copy">&copy; 2026 Big Bear Solar Observatory &middot; NJIT</p>
+        <p class="footer__funding">Supported by NSF AGS-2309939 and NJIT. GST partly supported by KASI and Seoul National University.</p>
       </div>
     </div>
   </footer>
-
   <script src="js/nav.js"></script>
 </body>
 </html>

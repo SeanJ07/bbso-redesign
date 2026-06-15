@@ -1,353 +1,83 @@
-/* ===== BBSO Redesign — Pages (Tours, About, Research) ===== */
+/* ===== BBSO Redesign — Page Layouts ===== */
 
-/* --- Page Header --- */
+/* Page header */
 .page-header {
-  margin-top: 72px;
-  padding: var(--space-16) 0 var(--space-12);
-  background: linear-gradient(180deg, var(--color-bg-tertiary) 0%, var(--color-bg-primary) 100%);
-  text-align: center;
+  margin-top: 64px; padding: var(--s16) 0 var(--s10);
+  border-bottom: 1px solid var(--border);
 }
-
 .page-header__tag {
-  display: inline-block;
-  background: rgba(245, 158, 11, 0.15);
-  color: var(--color-accent-solar);
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-semibold);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-full);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  margin-bottom: var(--space-4);
+  color: var(--accent); font-size: var(--text-sm); font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--s2);
+}
+.page-header__title { margin-bottom: var(--s4); }
+.page-header__desc { color: var(--text-muted); max-width: 50ch; }
+
+/* Two-column layout */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s10); align-items: start; }
+
+@media (max-width: 1023px) {
+  .split { grid-template-columns: 1fr; }
 }
 
-.page-header__title {
-  font-size: var(--text-5xl);
-  margin-bottom: var(--space-4);
-}
-
-.page-header__description {
-  color: var(--color-text-secondary);
-  font-size: var(--text-lg);
-  max-width: 50ch;
-  margin: 0 auto;
-}
-
-/* --- Tour Info Cards --- */
-.tour-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-6);
-  margin-bottom: var(--space-12);
-}
-
-.tour-info-card {
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
-  text-align: center;
-}
-
-.tour-info-card__icon {
-  font-size: var(--text-3xl);
-  margin-bottom: var(--space-3);
-}
-
-.tour-info-card__label {
-  font-size: var(--text-xs);
-  color: var(--color-text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: var(--space-1);
-}
-
-.tour-info-card__value {
-  font-size: var(--text-xl);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-heading);
-}
-
-/* --- Tour Dates Table --- */
-.tour-dates {
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin-bottom: var(--space-12);
-}
-
-.tour-dates__header {
-  padding: var(--space-5) var(--space-6);
-  border-bottom: 1px solid var(--color-border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.tour-dates__title {
-  font-size: var(--text-xl);
-  font-weight: var(--font-weight-semibold);
-}
-
-.tour-dates__badge {
-  background: var(--color-error);
-  color: white;
-  font-size: var(--text-xs);
-  font-weight: var(--font-weight-bold);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
-}
-
-.tour-dates table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.tour-dates th {
-  text-align: left;
-  font-size: var(--text-xs);
-  color: var(--color-text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: var(--space-3) var(--space-6);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.tour-dates td {
-  padding: var(--space-4) var(--space-6);
-  border-bottom: 1px solid var(--color-border);
-  font-size: var(--text-sm);
-}
-
-.tour-dates tr:last-child td {
-  border-bottom: none;
-}
-
-.tour-dates__date {
-  font-weight: var(--font-weight-medium);
-}
-
-.tour-dates__status {
-  display: inline-block;
-  font-size: var(--text-xs);
-  font-weight: var(--font-weight-semibold);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
-}
-
-.tour-dates__status--full {
-  background: rgba(239, 68, 68, 0.15);
-  color: var(--color-error);
-}
-
-/* --- Alert Banner --- */
-.alert {
-  background: rgba(245, 158, 11, 0.1);
-  border: 1px solid var(--color-border-accent);
-  border-radius: var(--radius-md);
-  padding: var(--space-4) var(--space-5);
-  margin-bottom: var(--space-8);
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-3);
-}
-
-.alert__icon {
-  font-size: var(--text-xl);
-  flex-shrink: 0;
-}
-
-.alert__text {
-  font-size: var(--text-sm);
-  color: var(--color-text-secondary);
-  line-height: var(--leading-normal);
-}
-
-.alert__text strong {
-  color: var(--color-text-heading);
-}
-
-/* --- Content Sections (About page) --- */
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-12);
-  align-items: start;
-}
-
-.content-grid--reverse {
-  direction: rtl;
-}
-
-.content-grid--reverse > * {
-  direction: ltr;
-}
-
-.content-grid__image {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  object-fit: cover;
-  aspect-ratio: 4/3;
-  background: var(--color-bg-tertiary);
-}
-
-.content-grid__text h3 {
-  font-size: var(--text-2xl);
-  margin-bottom: var(--space-4);
-}
-
-.content-grid__text p {
-  color: var(--color-text-secondary);
-  line-height: var(--leading-normal);
-  margin-bottom: var(--space-4);
-}
-
-/* --- Team Grid --- */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-6);
-}
-
-.team-card {
-  text-align: center;
-}
-
-.team-card__photo {
-  width: 120px;
-  height: 120px;
-  border-radius: var(--radius-full);
-  object-fit: cover;
-  margin: 0 auto var(--space-3);
-  background: var(--color-bg-tertiary);
-  border: 2px solid var(--color-border);
-}
-
-.team-card__name {
-  font-size: var(--text-base);
-  font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--space-1);
-}
-
-.team-card__role {
-  font-size: var(--text-sm);
-  color: var(--color-accent-solar);
-}
-
-/* --- Partner Logos --- */
-.partner-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space-8);
-  align-items: center;
-}
-
-.partner-logo {
-  height: 48px;
-  opacity: 0.6;
-  filter: grayscale(100%) brightness(200%);
-  transition: opacity var(--transition-base), filter var(--transition-base);
-}
-
-.partner-logo:hover {
-  opacity: 1;
-  filter: grayscale(0%) brightness(100%);
-}
-
-/* --- Research Detail Page --- */
-.research-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
+/* Research list */
+.research-list { display: flex; flex-direction: column; gap: var(--s4); }
 
 .research-item {
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
-  display: flex;
-  align-items: center;
-  gap: var(--space-5);
-  transition: border-color var(--transition-base);
-  text-decoration: none;
-  color: inherit;
+  display: flex; align-items: center; gap: var(--s5);
+  background: var(--bg-alt); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: var(--s6);
+  text-decoration: none; color: inherit;
+  transition: border-color 0.2s;
+}
+.research-item:hover { border-color: rgba(245,158,11,0.3); text-decoration: none; color: inherit; }
+.research-item__icon { font-size: var(--text-2xl); flex-shrink: 0; }
+.research-item__body { flex: 1; }
+.research-item__title { font-weight: 600; margin-bottom: var(--s1); }
+.research-item__desc { font-size: var(--text-sm); color: var(--text-muted); }
+.research-item__arrow { color: var(--text-muted); transition: transform 0.15s; }
+.research-item:hover .research-item__arrow { color: var(--accent); transform: translateX(4px); }
+
+/* Dates table */
+.dates-table {
+  background: var(--bg-alt); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+}
+.dates-table__head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: var(--s4) var(--s6); border-bottom: 1px solid var(--border);
+}
+.dates-table__title { font-size: var(--text-lg); font-weight: 600; }
+.dates-table__badge {
+  background: #ef4444; color: white; font-size: var(--text-xs);
+  font-weight: 700; padding: var(--s1) var(--s3); border-radius: 9999px;
+}
+.dates-table table { width: 100%; border-collapse: collapse; }
+.dates-table th {
+  text-align: left; font-size: var(--text-xs); color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.05em;
+  padding: var(--s3) var(--s6); border-bottom: 1px solid var(--border);
+}
+.dates-table td { padding: var(--s3) var(--s6); border-bottom: 1px solid var(--border); font-size: var(--text-sm); }
+.dates-table tr:last-child td { border-bottom: none; }
+.status--full {
+  display: inline-block; font-size: var(--text-xs); font-weight: 600;
+  background: rgba(239,68,68,0.12); color: #ef4444;
+  padding: var(--s1) var(--s2); border-radius: 9999px;
 }
 
-.research-item:hover {
-  border-color: var(--color-border-accent);
-  color: inherit;
+/* Info cards */
+.info-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s6); }
+.info-card {
+  background: var(--bg-alt); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: var(--s6); text-align: center;
 }
-
-.research-item__icon {
-  font-size: var(--text-3xl);
-  flex-shrink: 0;
-}
-
-.research-item__content {
-  flex: 1;
-}
-
-.research-item__title {
-  font-size: var(--text-lg);
-  font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--space-1);
-}
-
-.research-item__desc {
-  font-size: var(--text-sm);
-  color: var(--color-text-secondary);
-}
-
-.research-item__arrow {
-  color: var(--color-text-secondary);
-  font-size: var(--text-lg);
-  transition: transform var(--transition-fast);
-}
-
-.research-item:hover .research-item__arrow {
-  color: var(--color-accent-solar);
-  transform: translateX(4px);
-}
-
-/* --- Responsive --- */
-@media (max-width: 1023px) {
-  .content-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-8);
-  }
-
-  .content-grid--reverse {
-    direction: ltr;
-  }
-
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+.info-card__icon { font-size: var(--text-2xl); margin-bottom: var(--s3); }
+.info-card__label { font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.info-card__value { font-size: var(--text-xl); font-weight: 600; color: var(--text-bright); }
 
 @media (max-width: 767px) {
-  .page-header {
-    padding: var(--space-12) 0 var(--space-8);
-  }
-
-  .page-header__title {
-    font-size: var(--text-3xl);
-  }
-
-  .tour-info {
-    grid-template-columns: 1fr;
-  }
-
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .research-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  .info-cards { grid-template-columns: 1fr; }
+  .page-header { padding: var(--s12) 0 var(--s8); }
+  .page-header__title { font-size: var(--text-3xl); }
+  .research-item { flex-direction: column; align-items: flex-start; }
 }
