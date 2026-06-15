@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Big Bear Solar Observatory</title>
   <meta name="description" content="Big Bear Solar Observatory operates the Goode Solar Telescope, one of the world's premier instruments for high-resolution solar observations.">
-  <link rel="stylesheet" href="css/main.css?v=2">
+  <meta property="og:title" content="Big Bear Solar Observatory">
+  <meta property="og:description" content="High-resolution solar observations with the Goode Solar Telescope at Big Bear Solar Observatory.">
+  <meta property="og:image" content="https://www.bbso.njit.edu/Icons/banner.png">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/main.css?v=3">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -32,11 +36,11 @@
       <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu"><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span></button>
     </div>
     <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
-      <a href="index.html" class="nav__mobile-link">Home</a><div class="nav__mobile-section">Projects</div><a href="https://www.bbso.njit.edu/nst_project.html" class="nav__mobile-link">GST General Info</a><a href="https://www.bbso.njit.edu/nst_instr_list.html" class="nav__mobile-link">GST Instruments</a><a href="https://www.bbso.njit.edu/intermitt.html" class="nav__mobile-link">Intermittency</a><a href="https://www.bbso.njit.edu/oscillations.html" class="nav__mobile-link">Oscillations</a><div class="nav__mobile-section">People</div><a href="https://www.bbso.njit.edu/newstaff.html" class="nav__mobile-link">BBSO Staff</a><div class="nav__mobile-section">Operations</div><a href="https://www.bbso.njit.edu/bbso_seminar.html" class="nav__mobile-link">BBSO Seminars</a><div class="nav__mobile-section">Data</div><a href="https://www.bbso.njit.edu/cgi-bin/LatestImages" class="nav__mobile-link" target="_blank" rel="noopener">Latest Images</a><a href="https://www.bbso.njit.edu/Research/FDHA/ha_1min.html" class="nav__mobile-link">H&alpha; Full Disk Live</a><div class="nav__mobile-section">Partners</div><a href="https://nso.edu/telescopes/nisp/gong/" class="nav__mobile-link" target="_blank" rel="noopener">GONG</a><a href="https://www.kasi.re.kr/eng/index" class="nav__mobile-link" target="_blank" rel="noopener">KASI</a><div class="nav__mobile-section">About BBSO</div><a href="https://www.bbso.njit.edu/hist_index.html" class="nav__mobile-link">Observatory History</a><a href="tours.html" class="nav__mobile-link">Public Tours</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__mobile-link">WebCams</a><a href="https://www.bbso.njit.edu/contact.html" class="nav__mobile-link">Contact Us</a>
+      <a href="index.html" class="nav__mobile-link">Home</a><div class="nav__mobile-section">Projects</div><a href="https://www.bbso.njit.edu/nst_project.html" class="nav__mobile-link">GST General Info</a><a href="https://www.bbso.njit.edu/nst_instr_list.html" class="nav__mobile-link">GST Instruments</a><div class="nav__mobile-section">People</div><a href="https://www.bbso.njit.edu/newstaff.html" class="nav__mobile-link">BBSO Staff</a><div class="nav__mobile-section">Operations</div><a href="https://www.bbso.njit.edu/bbso_seminar.html" class="nav__mobile-link">BBSO Seminars</a><div class="nav__mobile-section">Data</div><a href="https://www.bbso.njit.edu/cgi-bin/LatestImages" class="nav__mobile-link" target="_blank" rel="noopener">Latest Images</a><a href="https://www.bbso.njit.edu/Research/FDHA/ha_1min.html" class="nav__mobile-link">H&alpha; Full Disk Live</a><div class="nav__mobile-section">Partners</div><a href="https://nso.edu/telescopes/nisp/gong/" class="nav__mobile-link" target="_blank" rel="noopener">GONG</a><a href="https://www.kasi.re.kr/eng/index" class="nav__mobile-link" target="_blank" rel="noopener">KASI</a><div class="nav__mobile-section">About BBSO</div><a href="https://www.bbso.njit.edu/hist_index.html" class="nav__mobile-link">Observatory History</a><a href="tours.html" class="nav__mobile-link">Public Tours</a><a href="https://www.bbso.njit.edu/contact.html" class="nav__mobile-link">Contact Us</a>
     </div>
   </nav>
 
-  <!-- Main Content — all inlined, no iframes -->
+  <!-- Main Content -->
   <main id="main">
     <div class="content-area">
 
@@ -46,8 +50,15 @@
         <a href="tours.html" style="color:darkred;font-weight:bold;">BBSO Home Page</a>
       </div>
 
-      <!-- Quick Links + Video side-by-side (matches original layout) -->
-      <div class="links-video-row">
+      <!-- In-page navigation -->
+      <nav class="inpage-nav" aria-label="Jump to section">
+        <a href="#quick-links">Quick Links</a>
+        <a href="#nuggets">Science Nuggets</a>
+        <a href="#news">News</a>
+      </nav>
+
+      <!-- Quick Links + Video side-by-side -->
+      <div class="links-video-row" id="quick-links">
         <section class="quick-links" aria-label="Quick Links">
           <div class="quick-links__title">Quick Links</div>
           <div class="quick-links__row"><a href="https://www.bbso.njit.edu/scinews/GST_10v2.pdf">10+ Years of GST: Collection of Results</a></div>
@@ -63,137 +74,261 @@
         </div>
       </div>
 
-      <!-- Science Nuggets — INLINED, no iframe -->
+      <!-- Science Nuggets — Card Grid -->
       <h2 class="section-header" id="nuggets">Science Nuggets</h2>
 
-      <article class="nugget">
-        <h3><a href="https://www.bbso.njit.edu/scinews/Dirk2025_hr.png">Raindrops in the Solar Corona</a></h3>
-        <a href="https://www.bbso.njit.edu/scinews/Dirk2025_hr.png"><img src="https://www.bbso.njit.edu/scinews/Dirk2025_lr.png" alt="High-resolution coronal image showing fine structures" width="200" loading="lazy"></a>
-        <p>Scientists from the U.S. National Science Foundation National Solar Observatory and New Jersey Institute of Technology produced the finest images of the Sun's corona to date. To make these high-resolution images and movies, the team developed a new coronal adaptive optics system that removes blur from images caused by the Earth's atmosphere. Their ground-breaking results were recently published in <a href="https://www.nature.com/articles/s41550-025-02530-0">Nature Astronomy</a> and pave the way for deeper insight into coronal heating, solar eruptions, and space weather, and open an opportunity for new discoveries in the Sun's atmosphere.</p>
-        <p class="pub-ref">Published May 2025 &mdash; Dirk Schmidt, Thomas A. Schad, Vasyl Yurchyshyn, Nicolas Gorceix, Thomas R. Rimmele, Philip R. Goode</p>
-      </article>
+      <div class="nuggets-grid">
 
-      <article class="nugget">
-        <h3><a href="https://www.bbso.njit.edu/scinews/Zheng2023_hr.png">Death of a Sunspot</a></h3>
-        <a href="https://www.bbso.njit.edu/scinews/Zheng2023_hr.png"><img src="https://www.bbso.njit.edu/scinews/Zheng2024_lr.png" alt="Sunspot decay observed with GST" width="200" loading="lazy"></a>
-        <p>The interaction between magnetic fields and convection in sunspots during their decay process remains poorly understood. The high spatial and temporal resolution of the GST instruments allowed analysis of the causes of sunspot decay. Authors found that the area and total magnetic flux display an exponential decrease over the course of the sunspot decay, and identified 22 moving magnetic features in the moats of pores, a signature of sunspot decay through diffusion.</p>
-        <p class="pub-ref">Published June 2023 &mdash; Astron. Astrophys., 686, id.A75</p>
-      </article>
+        <article class="nugget-card">
+          <img class="nugget-card__img" src="https://www.bbso.njit.edu/scinews/Dirk2025_lr.png" alt="High-resolution coronal image showing fine structures" loading="lazy" data-full="https://www.bbso.njit.edu/scinews/Dirk2025_hr.png">
+          <div class="nugget-card__body">
+            <h3 class="nugget-card__title"><a href="https://www.nature.com/articles/s41550-025-02530-0">Raindrops in the Solar Corona</a></h3>
+            <p class="nugget-card__text">Scientists from the NSF National Solar Observatory and NJIT produced the finest images of the Sun's corona to date using a new coronal adaptive optics system. Results published in Nature Astronomy.</p>
+            <p class="nugget-card__ref">May 2025 — Schmidt, Schad, Yurchyshyn, Gorceix, Rimmele, Goode</p>
+          </div>
+        </article>
 
-      <article class="nugget">
-        <h3><a href="https://www.bbso.njit.edu/scinews/Jing2022.png">Magnetic Fields above Sunspot Light Bridges</a></h3>
-        <a href="https://www.bbso.njit.edu/scinews/Jing2022.png"><img src="https://www.bbso.njit.edu/scinews/Jing2022_th.png" alt="Magnetic fields above sunspot light bridges" width="200" loading="lazy"></a>
-        <p>High spatial-resolution NIRIS magnetograms combined with HMI magnetograms and nonlinear force-free field models to study magnetic structures associated with sunspot light bridges. The effort revealed a field-free region and different velocity structures inside the two light bridges. Analysis showed a low-lying magnetic canopy and enhanced current system above the light bridges.</p>
-        <p class="pub-ref">Published August 2022 &mdash; Astrophys. J. Lett., 935, L27</p>
-      </article>
+        <article class="nugget-card">
+          <img class="nugget-card__img" src="https://www.bbso.njit.edu/scinews/Zheng2024_lr.png" alt="Sunspot decay observed with GST" loading="lazy" data-full="https://www.bbso.njit.edu/scinews/Zheng2023_hr.png">
+          <div class="nugget-card__body">
+            <h3 class="nugget-card__title"><a href="https://www.bbso.njit.edu/scinews/Zheng2023_hr.png">Death of a Sunspot</a></h3>
+            <p class="nugget-card__text">High spatial and temporal resolution of the GST instruments allowed analysis of sunspot decay. Area and total magnetic flux display an exponential decrease, with 22 moving magnetic features identified.</p>
+            <p class="nugget-card__ref">June 2023 — Astron. Astrophys., 686, id.A75</p>
+          </div>
+        </article>
 
-      <article class="nugget">
-        <h3><a href="https://www.bbso.njit.edu/scinews/Lee2022.jpg">Are Switchbacks produced by the Chromospheric Network?</a></h3>
-        <a href="https://www.bbso.njit.edu/scinews/Lee2022.jpg"><img src="https://www.bbso.njit.edu/scinews/Lee2022_th.jpg" alt="Chromospheric network and solar wind switchbacks" width="200" loading="lazy"></a>
-        <p>We tested recent claims that the magnetic switchbacks detected by the Parker Solar Probe carry information on the scales of solar supergranulation and granulation using high-resolution H-alpha images from the GST. Spicules standing along a chromospheric network near the coronal hole boundary present similar scales to the medium scale of switchbacks, and the typical network diameter of 0.6-1.8 degrees suggests the medium scale can be understood as an equilibrium distance between flux tubes in solar wind.</p>
-        <p class="pub-ref">Published August 2022 &mdash; Jeongwoo Lee et al., Astrophys. J. Lett., 935, L27</p>
-      </article>
+        <article class="nugget-card">
+          <img class="nugget-card__img" src="https://www.bbso.njit.edu/scinews/Jing2022_th.png" alt="Magnetic fields above sunspot light bridges" loading="lazy" data-full="https://www.bbso.njit.edu/scinews/Jing2022.png">
+          <div class="nugget-card__body">
+            <h3 class="nugget-card__title"><a href="https://www.bbso.njit.edu/scinews/Jing2022.png">Magnetic Fields above Sunspot Light Bridges</a></h3>
+            <p class="nugget-card__text">NIRIS magnetograms combined with HMI magnetograms and nonlinear force-free field models revealed a field-free region and different velocity structures inside light bridges.</p>
+            <p class="nugget-card__ref">August 2022 — Astrophys. J. Lett., 935, L27</p>
+          </div>
+        </article>
 
-      <article class="nugget">
-        <h3><a href="https://www.bbso.njit.edu/scinews/Loz2022_hr.png">Kilogauss Magnetic Fields on the Sun</a></h3>
-        <a href="https://www.bbso.njit.edu/scinews/Loz2022_hr.png"><img src="https://www.bbso.njit.edu/scinews/Loz2022_lr.png" alt="Kilogauss magnetic fields observed by GST" width="200" loading="lazy"></a>
-        <p>Line-of-sight magnetic fields and magnetic power spectra of a quiet Sun region were analyzed using HMI and BBSO NIRIS data. The NIRIS data revealed the presence of thin flux tubes of 200-400 km in diameter and field strength of 1000-2000 G. The HMI power spectra exhibited the same spectral index of -1 on a broad range of spatial scales, implying the same mechanism of magnetic field generation operates everywhere in the undisturbed photosphere.</p>
-        <p class="pub-ref">Published March 2022 &mdash; Astrophys. J., 928, 41</p>
-      </article>
+        <article class="nugget-card">
+          <img class="nugget-card__img" src="https://www.bbso.njit.edu/scinews/Lee2022_th.jpg" alt="Chromospheric network and solar wind switchbacks" loading="lazy" data-full="https://www.bbso.njit.edu/scinews/Lee2022.jpg">
+          <div class="nugget-card__body">
+            <h3 class="nugget-card__title"><a href="https://www.bbso.njit.edu/scinews/Lee2022.jpg">Are Switchbacks produced by the Chromospheric Network?</a></h3>
+            <p class="nugget-card__text">High-resolution H-alpha images from the GST show spicules along a chromospheric network present similar scales to the medium scale of Parker Solar Probe switchbacks.</p>
+            <p class="nugget-card__ref">August 2022 — Lee et al., Astrophys. J. Lett., 935, L27</p>
+          </div>
+        </article>
 
-      <article class="nugget">
-        <h3><a href="https://www.bbso.njit.edu/scinews/Xu2022_hr.png">Flare Emission in Helium Line 10830</a></h3>
-        <a href="https://www.bbso.njit.edu/scinews/Xu2022_hr.png"><img src="https://www.bbso.njit.edu/scinews/Xu2022_lr.png" alt="Flare emission in helium line 10830" width="200" loading="lazy"></a>
-        <p>Jan 31, 2022: Flare emission/absorption in helium line 10830 at multiple spectral positions observed with the GST.</p>
-        <p class="pub-ref">January 2022</p>
-      </article>
+        <article class="nugget-card">
+          <img class="nugget-card__img" src="https://www.bbso.njit.edu/scinews/Loz2022_lr.png" alt="Kilogauss magnetic fields observed by GST" loading="lazy" data-full="https://www.bbso.njit.edu/scinews/Loz2022_hr.png">
+          <div class="nugget-card__body">
+            <h3 class="nugget-card__title"><a href="https://www.bbso.njit.edu/scinews/Loz2022_hr.png">Kilogauss Magnetic Fields on the Sun</a></h3>
+            <p class="nugget-card__text">NIRIS data revealed thin flux tubes of 200-400 km in diameter with field strength of 1000-2000 G. HMI power spectra exhibited the same spectral index of -1 across spatial scales.</p>
+            <p class="nugget-card__ref">March 2022 — Astrophys. J., 928, 41</p>
+          </div>
+        </article>
 
-      <!-- More nuggets hidden by default -->
+        <article class="nugget-card">
+          <img class="nugget-card__img" src="https://www.bbso.njit.edu/scinews/Xu2022_lr.png" alt="Flare emission in helium line 10830" loading="lazy" data-full="https://www.bbso.njit.edu/scinews/Xu2022_hr.png">
+          <div class="nugget-card__body">
+            <h3 class="nugget-card__title"><a href="https://www.bbso.njit.edu/scinews/Xu2022_hr.png">Flare Emission in Helium Line 10830</a></h3>
+            <p class="nugget-card__text">Flare emission/absorption in helium line 10830 at multiple spectral positions observed with the GST.</p>
+            <p class="nugget-card__ref">January 2022</p>
+          </div>
+        </article>
+
+      </div><!-- .nuggets-grid -->
+
+      <!-- Extra nuggets hidden by default -->
       <div class="nugget-extra" id="more-nuggets">
-        <article class="nugget">
-          <h3><a href="https://www.bbso.njit.edu/scinews/yur2020mar_hr.jpg">Earth is Reflecting Less Light</a></h3>
-          <p>Jan 30, 2022: Earth is reflecting less light. It's not clear if that's a trend.</p>
-        </article>
-        <article class="nugget">
-          <h3>Turbulent Magnetic Fields in Quiet Sun</h3>
-          <p>Sept 10, 2020: Analysis of quiet-sun turbulence on the basis of SDO/HMI and Goode Solar Telescope data. Published in MNRAS, 497, Issue 4, 5405-5412.</p>
-        </article>
-        <article class="nugget">
-          <h3>Physical Characteristics of Umbral Dots</h3>
-          <p>Apr 21, 2020: Physical characteristics of umbral dots derived from high-resolution observations.</p>
-        </article>
-        <article class="nugget">
-          <h3>Dynamic Type II Spicules</h3>
-          <p>Mar 4, 2020: Dynamic Type II spicules may result from component reconnection.</p>
-        </article>
-        <article class="nugget">
-          <h3>Formation of Solar Spicules and Coronal Heating</h3>
-          <p>Nov 15, 2019: Formation of solar spicules and subsequent coronal heating unveiled.</p>
-        </article>
-        <article class="nugget">
-          <h3>Plasma Vortices in Sunspot Umbra</h3>
-          <p>Sept 16, 2019: Plasma vortices observed in the sunspot umbra.</p>
-        </article>
-        <article class="nugget">
-          <h3>Superpenumbral H-alpha Fibrils</h3>
-          <p>Aug 5, 2019: High-resolution observations of dynamics of superpenumbral H-alpha fibrils.</p>
-        </article>
-        <article class="nugget">
-          <h3>Ellerman Bomb Flames Fuel Solar Ultraviolet Bursts</h3>
-          <p>Apr 29, 2019: Flame-like Ellerman bombs and their connection to solar ultraviolet bursts.</p>
-        </article>
-        <article class="nugget">
-          <h3>Warm Coronal Loops Heated by Magnetic Cancellations</h3>
-          <p>Mar 1, 2019: Magnetic field dynamics and varying plasma emission in large-scale coronal loops.</p>
-        </article>
-        <article class="nugget">
-          <h3>GST Detects Vector Field Changes with Moving Flare Ribbons</h3>
-          <p>Jan 7, 2019: Evolution of photospheric vector magnetic field associated with moving flare ribbons.</p>
-        </article>
-        <article class="nugget">
-          <h3>New Structures in Sunspot Light Bridges</h3>
-          <p>Sept 19, 2018: GST sees new structures in sunspot light bridges.</p>
-        </article>
-        <article class="nugget">
-          <h3>Reconnection Jets Inside a Sunspot</h3>
-          <p>Feb 15, 2018: Reconnection jets observed inside a sunspot.</p>
-        </article>
-        <article class="nugget">
-          <h3>Very Strong Transverse Photospheric Magnetic Fields</h3>
-          <p>Jan 12, 2018: GST detects very strong transverse photospheric magnetic fields.</p>
-        </article>
-        <p style="text-align:center;font-size:0.8rem;color:#666;margin-top:8px;">Additional nuggets dating back to 2010 are available on the <a href="https://www.bbso.njit.edu/scinews/bbsosci.html" target="_blank" rel="noopener">original BBSO science nuggets page</a>.</p>
+        <div class="nuggets-grid">
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Earth is Reflecting Less Light</h3>
+              <p class="nugget-card__text">Earth is reflecting less light. It's not clear if that's a trend.</p>
+              <p class="nugget-card__ref">January 2022</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Turbulent Magnetic Fields in Quiet Sun</h3>
+              <p class="nugget-card__text">Analysis of quiet-sun turbulence on the basis of SDO/HMI and Goode Solar Telescope data.</p>
+              <p class="nugget-card__ref">September 2020 — MNRAS, 497, Issue 4, 5405-5412</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Physical Characteristics of Umbral Dots</h3>
+              <p class="nugget-card__text">Physical characteristics of umbral dots derived from high-resolution observations.</p>
+              <p class="nugget-card__ref">April 2020</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Dynamic Type II Spicules</h3>
+              <p class="nugget-card__text">Dynamic Type II spicules may result from component reconnection.</p>
+              <p class="nugget-card__ref">March 2020</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Formation of Solar Spicules and Coronal Heating</h3>
+              <p class="nugget-card__text">Formation of solar spicules and subsequent coronal heating unveiled.</p>
+              <p class="nugget-card__ref">November 2019</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Plasma Vortices in Sunspot Umbra</h3>
+              <p class="nugget-card__text">Plasma vortices observed in the sunspot umbra.</p>
+              <p class="nugget-card__ref">September 2019</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Superpenumbral H-alpha Fibrils</h3>
+              <p class="nugget-card__text">High-resolution observations of dynamics of superpenumbral H-alpha fibrils.</p>
+              <p class="nugget-card__ref">August 2019</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Ellerman Bomb Flames Fuel Solar Ultraviolet Bursts</h3>
+              <p class="nugget-card__text">Flame-like Ellerman bombs and their connection to solar ultraviolet bursts.</p>
+              <p class="nugget-card__ref">April 2019</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Warm Coronal Loops Heated by Magnetic Cancellations</h3>
+              <p class="nugget-card__text">Magnetic field dynamics and varying plasma emission in large-scale coronal loops.</p>
+              <p class="nugget-card__ref">March 2019</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">GST Detects Vector Field Changes with Moving Flare Ribbons</h3>
+              <p class="nugget-card__text">Evolution of photospheric vector magnetic field associated with moving flare ribbons.</p>
+              <p class="nugget-card__ref">January 2019</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">New Structures in Sunspot Light Bridges</h3>
+              <p class="nugget-card__text">GST sees new structures in sunspot light bridges.</p>
+              <p class="nugget-card__ref">September 2018</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Reconnection Jets Inside a Sunspot</h3>
+              <p class="nugget-card__text">Reconnection jets observed inside a sunspot.</p>
+              <p class="nugget-card__ref">February 2018</p>
+            </div>
+          </article>
+          <article class="nugget-card">
+            <div class="nugget-card__body">
+              <h3 class="nugget-card__title">Very Strong Transverse Photospheric Magnetic Fields</h3>
+              <p class="nugget-card__text">GST detects very strong transverse photospheric magnetic fields.</p>
+              <p class="nugget-card__ref">January 2018</p>
+            </div>
+          </article>
+        </div>
+        <p style="text-align:center;font-size:0.875rem;color:#666;margin-top:0.5rem;">Additional nuggets dating back to 2010 are available on the <a href="https://www.bbso.njit.edu/scinews/bbsosci.html" target="_blank" rel="noopener">original BBSO science nuggets page</a>.</p>
       </div>
 
-      <button class="load-more" id="load-nuggets-btn" onclick="document.getElementById('more-nuggets').classList.toggle('is-visible'); this.style.display='none';">Show More Nuggets</button>
+      <button class="load-more" id="load-nuggets-btn">Show More Nuggets</button>
 
-      <!-- News — INLINED, no iframe -->
+      <!-- News — Accordion -->
       <h2 class="section-header" id="news">News</h2>
 
-      <div class="news-item"><span class="news-date">Jan 27, 2026:</span> Office of Science and Technology Policy, White House: <a href="https://www.whitehouse.gov/wp-content/uploads/2026/01/Science-and-Technology-Highlights.pdf">Science and Technology Highlights</a></div>
-      <div class="news-item"><span class="news-date">Oct 3, 2024:</span> MRI Track 1: Development of <a href="https://www.bbso.njit.edu/WHISPER/">WHISPER</a> for Goode Solar Telescope</div>
-      <div class="news-item"><span class="news-date">Oct 2, 2024:</span> <a href="https://nso.edu/telescopes/nisp/solis">NSF SOLIS facility, operated by NSO at Big Bear Solar Observatory, installed two out of the three instruments!</a></div>
-      <div class="news-item"><span class="news-date">Jul-Aug 2024:</span> <a href="http://www.bbso.njit.edu/school24/school24.html">BBSO Summer School</a></div>
-      <div class="news-item"><span class="news-date">Feb 7, 2022:</span> <a href="https://www.njit.edu/about/leadership/nsf-appoints-bbso-director-wenda-cao-its-astronomy-and-astrophysics-advisory-committee">NSF Appoints BBSO Director Wenda Cao to Its Astronomy and Astrophysics Advisory Committee</a></div>
-      <div class="news-item"><span class="news-date">Oct 28, 2021:</span> <a href="https://www.njit.edu/news/njit-awarded-nsf-grant-open-undergrad-space-weather-research-program">NJIT Awarded NSF Grant to Open Undergrad Space Weather Research Program</a></div>
-      <div class="news-item"><span class="news-date">Jul 22, 2021:</span> <a href="https://www.njit.edu/news/big-bear-solar-observatory-becomes-home-nsfs-solis-telescope">Big Bear Solar Observatory Becomes Home to NSF's SOLIS Telescope</a></div>
-      <div class="news-item"><span class="news-date">Sept 21, 2020:</span> <a href="https://www.nsf.gov/news/special_reports/astro2020/index.jsp">NSF's Study Assesses 30 Years of Landmark Astronomical Advances</a>, Highlights NJIT's Big Bear</div>
+      <div class="news-accordion">
 
-      <!-- More news hidden by default -->
-      <div class="news-extra" id="more-news">
-        <div class="news-item"><span class="news-date">Apr 26, 2018:</span> BBSO Seminar: Speaker Dr. Valentin Martinez Pillet, NSO</div>
-        <div class="news-item"><span class="news-date">Jan 10, 2018:</span> SOLIS has arrived to BBSO!</div>
-        <div class="news-item"><span class="news-date">Jul 17, 2017:</span> NJIT's New Solar Telescope renamed Goode Solar Telescope</div>
-        <div class="news-item"><span class="news-date">Jan 9, 2017:</span> BBSO Seminar: Speaker D. Banerjee, Indian Inst. of Astrophysics</div>
-        <div class="news-item"><span class="news-date">Dec 14, 2016:</span> BBSO Seminar: Speaker <a href="https://www.bbso.njit.edu/">Y. Katsukawa, NAOJ</a></div>
-        <div class="news-item"><span class="news-date">Mar 1, 2016:</span> <a href="https://www.bbso.njit.edu/">Second call for NST Observing Proposals</a></div>
-        <div class="news-item"><span class="news-date">Nov 10, 2015:</span> <a href="https://www.bbso.njit.edu/">Observing Proposals Sought for Big Bear Solar Observatory</a></div>
-        <div class="news-item"><span class="news-date">Aug 31, 2015:</span> NJIT Board of Overseers Excellence in Research Prize &amp; Medal 2015 - Dr. Haimin Wang</div>
-        <div class="news-item"><span class="news-date">Apr 29, 2015:</span> <a href="https://www.bbso.njit.edu/">NST Results in News</a></div>
-        <div class="news-item"><span class="news-date">Feb 17, 2015:</span> BBSO VIS H-alpha image featured in the <a href="https://apod.nasa.gov/apod/ap150217.html">Astronomy Picture of the Day</a></div>
-      </div>
+        <div class="news-accordion__item is-open">
+          <div class="news-accordion__header" onclick="this.parentElement.classList.toggle('is-open')">
+            <span class="news-accordion__date">Jan 27, 2026</span>
+            <span class="news-accordion__summary">Office of Science and Technology Policy, White House: Science and Technology Highlights</span>
+            <span class="news-accordion__icon">▼</span>
+          </div>
+          <div class="news-accordion__body">
+            <p>The White House Office of Science and Technology Policy featured BBSO in its <a href="https://www.whitehouse.gov/wp-content/uploads/2026/01/Science-and-Technology-Highlights.pdf">Science and Technology Highlights</a> report.</p>
+          </div>
+        </div>
 
-      <button class="load-more" id="load-news-btn" onclick="document.getElementById('more-news').classList.toggle('is-visible'); this.style.display='none';">Show More News</button>
+        <div class="news-accordion__item">
+          <div class="news-accordion__header" onclick="this.parentElement.classList.toggle('is-open')">
+            <span class="news-accordion__date">Oct 3, 2024</span>
+            <span class="news-accordion__summary">MRI Track 1: Development of WHISPER for Goode Solar Telescope</span>
+            <span class="news-accordion__icon">▼</span>
+          </div>
+          <div class="news-accordion__body">
+            <p>Development of the Wide-band High-resolution Imaging Spectro-Polarimetric Explorer (<a href="https://www.bbso.njit.edu/WHISPER/">WHISPER</a>) for the Goode Solar Telescope at Big Bear Solar Observatory.</p>
+          </div>
+        </div>
+
+        <div class="news-accordion__item">
+          <div class="news-accordion__header" onclick="this.parentElement.classList.toggle('is-open')">
+            <span class="news-accordion__date">Oct 2, 2024</span>
+            <span class="news-accordion__summary">NSF SOLIS facility installed at BBSO</span>
+            <span class="news-accordion__icon">▼</span>
+          </div>
+          <div class="news-accordion__body">
+            <p><a href="https://nso.edu/telescopes/nisp/solis">NSF SOLIS facility</a>, operated by NSO at Big Bear Solar Observatory, installed two out of the three instruments!</p>
+          </div>
+        </div>
+
+        <div class="news-accordion__item">
+          <div class="news-accordion__header" onclick="this.parentElement.classList.toggle('is-open')">
+            <span class="news-accordion__date">Jul-Aug 2024</span>
+            <span class="news-accordion__summary">BBSO Summer School</span>
+            <span class="news-accordion__icon">▼</span>
+          </div>
+          <div class="news-accordion__body">
+            <p><a href="http://www.bbso.njit.edu/school24/school24.html">BBSO Summer School</a> — annual solar physics training program.</p>
+          </div>
+        </div>
+
+        <div class="news-accordion__item">
+          <div class="news-accordion__header" onclick="this.parentElement.classList.toggle('is-open')">
+            <span class="news-accordion__date">Feb 7, 2022</span>
+            <span class="news-accordion__summary">NSF Appoints BBSO Director Wenda Cao to Advisory Committee</span>
+            <span class="news-accordion__icon">▼</span>
+          </div>
+          <div class="news-accordion__body">
+            <p><a href="https://www.njit.edu/about/leadership/nsf-appoints-bbso-director-wenda-cao-its-astronomy-and-astrophysics-advisory-committee">NSF Appoints BBSO Director Wenda Cao</a> to Its Astronomy and Astrophysics Advisory Committee.</p>
+          </div>
+        </div>
+
+        <div class="news-accordion__item">
+          <div class="news-accordion__header" onclick="this.parentElement.classList.toggle('is-open')">
+            <span class="news-accordion__date">Oct 28, 2021</span>
+            <span class="news-accordion__summary">NJIT Awarded NSF Grant for Space Weather Research Program</span>
+            <span class="news-accordion__icon">▼</span>
+          </div>
+          <div class="news-accordion__body">
+            <p><a href="https://www.njit.edu/news/njit-awarded-nsf-grant-open-undergrad-space-weather-research-program">NJIT Awarded NSF Grant</a> to Open Undergrad Space Weather Research Program.</p>
+          </div>
+        </div>
+
+        <div class="news-accordion__item">
+          <div class="news-accordion__header" onclick="this.parentElement.classList.toggle('is-open')">
+            <span class="news-accordion__date">Jul 22, 2021</span>
+            <span class="news-accordion__summary">Big Bear Solar Observatory Becomes Home to NSF's SOLIS Telescope</span>
+            <span class="news-accordion__icon">▼</span>
+          </div>
+          <div class="news-accordion__body">
+            <p><a href="https://www.njit.edu/news/big-bear-solar-observatory-becomes-home-nsfs-solis-telescope">Big Bear Solar Observatory Becomes Home</a> to NSF's SOLIS Telescope.</p>
+          </div>
+        </div>
+
+        <div class="news-accordion__item">
+          <div class="news-accordion__header" onclick="this.parentElement.classList.toggle('is-open')">
+            <span class="news-accordion__date">Sept 21, 2020</span>
+            <span class="news-accordion__summary">NSF's Study Assesses 30 Years of Landmark Astronomical Advances</span>
+            <span class="news-accordion__icon">▼</span>
+          </div>
+          <div class="news-accordion__body">
+            <p><a href="https://www.nsf.gov/news/special_reports/astro2020/index.jsp">NSF's Study Assesses 30 Years</a> of Landmark Astronomical Advances, Highlights NJIT's Big Bear.</p>
+          </div>
+        </div>
+
+      </div><!-- .news-accordion -->
 
       <!-- Acknowledgements -->
       <footer class="site-footer">
@@ -206,6 +341,12 @@
 
     </div>
   </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox__close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="Full-size image">
+  </div>
 
   <!-- Back to top -->
   <a href="#main" class="back-to-top" id="back-to-top" aria-label="Back to top">&uarr;</a>
@@ -230,6 +371,33 @@
         backToTop.classList.toggle('is-visible', window.scrollY > 400);
       });
     }
+
+    // Show more nuggets
+    const nuggetsBtn = document.getElementById('load-nuggets-btn');
+    if (nuggetsBtn) {
+      nuggetsBtn.addEventListener('click', function() {
+        document.getElementById('more-nuggets').classList.add('is-visible');
+        this.style.display = 'none';
+      });
+    }
+
+    // Lightbox
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+    // Wire up card images
+    document.querySelectorAll('.nugget-card__img[data-full]').forEach(img => {
+      img.addEventListener('click', () => openLightbox(img.dataset.full));
+    });
   </script>
 </body>
 </html>
