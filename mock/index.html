@@ -38,7 +38,7 @@
         <li class="nav__item"><a href="partners.html" class="nav__link">Partners</a></li>
         <li class="nav__item"><a href="about.html" class="nav__link">About BBSO</a></li>
       </ul>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙 Dark</button>
+
       <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu"><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span></button>
     </div>
     <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
@@ -351,29 +351,6 @@
     document.querySelectorAll('.nugget-card__img[data-full]').forEach(img => {
       img.addEventListener('click', () => openLightbox(img.dataset.full));
     });
-
-    // Dark mode toggle
-    const themeBtn = document.getElementById('theme-toggle');
-    if (themeBtn) {
-      // Check saved preference
-      const saved = localStorage.getItem('bbso-theme');
-      if (saved === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeBtn.textContent = '☀️ Light';
-      }
-      themeBtn.addEventListener('click', () => {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        if (isDark) {
-          document.documentElement.removeAttribute('data-theme');
-          themeBtn.textContent = '🌙 Dark';
-          localStorage.setItem('bbso-theme', 'light');
-        } else {
-          document.documentElement.setAttribute('data-theme', 'dark');
-          themeBtn.textContent = '☀️ Light';
-          localStorage.setItem('bbso-theme', 'dark');
-        }
-      });
-    }
   </script>
 </body>
 </html>
