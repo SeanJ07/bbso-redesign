@@ -28,9 +28,7 @@
         <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
       </div>
       <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
       </button>
     </div>
     <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
@@ -51,27 +49,23 @@
   </section>
 
   <main id="main">
-    <section class="section container" aria-label="Tour availability notice">
+    <section class="section container" aria-label="Tour availability">
       <div class="alert">
-        <span aria-hidden="true">&#x1F534;</span>
         <p class="alert__text"><strong>All 2026 tours are currently fully booked.</strong> Cancellations may open spots. Check the <a href="https://forms.gle/bbso-tours" target="_blank" rel="noopener">online form</a> regularly, or call <a href="tel:9098665791">909-866-5791 ext. 210</a>.</p>
       </div>
 
       <div class="info-cards">
         <div class="info-card">
-          <div class="info-card__icon">&#x1F3AB;</div>
-          <div class="info-card__label">Cost</div>
           <div class="info-card__value">Free</div>
+          <div class="info-card__label">Admission</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">&#x23F1;</div>
-          <div class="info-card__label">Duration</div>
           <div class="info-card__value">1 Hour</div>
+          <div class="info-card__label">Duration</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">&#x1F4CD;</div>
-          <div class="info-card__label">Location</div>
           <div class="info-card__value">Big Bear Lake, CA</div>
+          <div class="info-card__label">Location</div>
         </div>
       </div>
     </section>
@@ -83,9 +77,7 @@
           <span class="dates-table__badge">All Full</span>
         </div>
         <table>
-          <thead>
-            <tr><th>Date</th><th>Day</th><th>Time</th><th>Status</th></tr>
-          </thead>
+          <thead><tr><th>Date</th><th>Day</th><th>Time</th><th>Status</th></tr></thead>
           <tbody>
             <tr><td><strong>May 28</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
             <tr><td><strong>June 11</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
@@ -112,21 +104,21 @@
           </div>
           <div class="card">
             <h3 class="card__title">Finding the Observatory</h3>
-            <p class="card__text">Half a mile west of the Big Bear Discovery Center on Hwy 38 (North Shore Drive). The observatory is private property; visits are by guided tour only.</p>
+            <p class="card__text">Half a mile west of the Big Bear Discovery Center on Hwy 38 (North Shore Drive). Private property; visits are by guided tour only.</p>
           </div>
           <div class="card">
-            <h3 class="card__title">Free, Donations Welcome</h3>
-            <p class="card__text">Tours are free of charge, but donations are strongly encouraged to support public outreach and docent programs.</p>
+            <h3 class="card__title">Donations Welcome</h3>
+            <p class="card__text">Tours are free, but donations are strongly encouraged to support public outreach and docent programs.</p>
           </div>
           <div class="card">
             <h3 class="card__title">Can't Make It?</h3>
-            <p class="card__text">Check out our <a href="https://www.bbso.njit.edu/bbso_webcams.html" target="_blank" rel="noopener">live webcam</a> for near real-time solar observations, or explore our virtual tours.</p>
+            <p class="card__text">Watch the Sun in near real-time through our <a href="https://www.bbso.njit.edu/bbso_webcams.html" target="_blank" rel="noopener">live webcam</a>, or explore virtual tours.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section container container--narrow" aria-labelledby="contact-heading">
+    <section class="section container" aria-labelledby="contact-heading">
       <div class="cta">
         <p class="cta__tag">Questions?</p>
         <h2 id="contact-heading" class="cta__title">Get in Touch</h2>
@@ -141,22 +133,10 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
-        <div>
-          <p class="footer__brand"><span>BBSO</span></p>
-          <p class="footer__desc">Operated by NJIT, conducting solar research above Big Bear Lake, California.</p>
-        </div>
-        <div>
-          <p class="footer__heading">Visit</p>
-          <nav class="footer__links"><a href="tours.html" class="footer__link">Tours</a><a href="about.html" class="footer__link">History</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a></nav>
-        </div>
-        <div>
-          <p class="footer__heading">Research</p>
-          <nav class="footer__links"><a href="research.html" class="footer__link">Projects</a><a href="research.html" class="footer__link">Instrumentation</a><a href="research.html" class="footer__link">Publications</a></nav>
-        </div>
-        <div>
-          <p class="footer__heading">Organization</p>
-          <nav class="footer__links"><a href="about.html" class="footer__link">About</a><a href="about.html#people" class="footer__link">People</a><a href="about.html#partners" class="footer__link">Partners</a></nav>
-        </div>
+        <div><p class="footer__brand"><span>BBSO</span></p><p class="footer__desc">Operated by NJIT, conducting solar research above Big Bear Lake, California.</p></div>
+        <div><p class="footer__heading">Visit</p><nav class="footer__links"><a href="tours.html" class="footer__link">Tours</a><a href="about.html" class="footer__link">History</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a></nav></div>
+        <div><p class="footer__heading">Research</p><nav class="footer__links"><a href="research.html" class="footer__link">Projects</a><a href="research.html" class="footer__link">Instrumentation</a><a href="research.html" class="footer__link">Publications</a></nav></div>
+        <div><p class="footer__heading">Organization</p><nav class="footer__links"><a href="about.html" class="footer__link">About</a><a href="about.html#people" class="footer__link">People</a><a href="about.html#partners" class="footer__link">Partners</a></nav></div>
       </div>
       <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 Big Bear Solar Observatory &middot; NJIT</p>

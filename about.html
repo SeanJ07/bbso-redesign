@@ -28,9 +28,7 @@
         <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
       </div>
       <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
       </button>
     </div>
     <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
@@ -58,18 +56,16 @@
           <p>Founded in 1969 by Caltech on a causeway in Big Bear Lake, the observatory takes advantage of stable air and clear skies over the water. The unique lakeside location provides exceptional seeing conditions for solar observations.</p>
           <p>In 1997, ownership transferred to the New Jersey Institute of Technology (NJIT), which has operated and expanded the facility since. Today, BBSO is home to the 1.6-meter Goode Solar Telescope, one of the largest and most capable solar telescopes in the world.</p>
         </div>
-        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s10); text-align: center;">
-          <div style="font-size: var(--text-4xl); font-weight: 700; color: var(--accent);">1969</div>
-          <div style="color: var(--text-muted); margin-top: var(--s2);">Founded on Big Bear Lake</div>
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg-raised);border:1px solid var(--border);border-radius:var(--radius);padding:3rem;text-align:center;">
+          <div style="font-size:3.5rem;font-weight:700;color:var(--accent);">1969</div>
+          <div style="color:var(--text-muted);margin-top:0.5rem;">Founded on Big Bear Lake</div>
         </div>
       </div>
     </section>
 
     <section class="section section--alt" aria-labelledby="facts-heading">
       <div class="container">
-        <div class="section__header">
-          <h2 id="facts-heading" class="section__title">By the Numbers</h2>
-        </div>
+        <h2 id="facts-heading" class="section__title">By the Numbers</h2>
         <div class="grid grid--4">
           <div class="card stat"><div class="stat__value">1.6m</div><div class="stat__label">GST Aperture</div></div>
           <div class="card stat"><div class="stat__value">6,743 ft</div><div class="stat__label">Elevation</div></div>
@@ -84,25 +80,25 @@
         <h2 id="people-heading" class="section__title">People</h2>
         <p class="section__desc">BBSO is staffed by solar physicists, engineers, and support personnel from NJIT and partner institutions.</p>
       </div>
-      <div class="grid grid--4" style="text-align: center;">
+      <div class="grid grid--4" style="text-align:center;">
         <div class="card">
-          <div style="font-weight: 600; margin-bottom: var(--s1);">Wenda Cao</div>
-          <div style="font-size: var(--text-sm); color: var(--accent);">Director, BBSO</div>
+          <div style="font-weight:600;margin-bottom:0.25rem;">Wenda Cao</div>
+          <div style="font-size:0.875rem;color:var(--accent);">Director, BBSO</div>
         </div>
         <div class="card">
-          <div style="font-weight: 600; margin-bottom: var(--s1);">Philip Goode</div>
-          <div style="font-size: var(--text-sm); color: var(--accent);">Distinguished Research Professor</div>
+          <div style="font-weight:600;margin-bottom:0.25rem;">Philip Goode</div>
+          <div style="font-size:0.875rem;color:var(--accent);">Distinguished Research Professor</div>
         </div>
         <div class="card">
-          <div style="font-weight: 600; margin-bottom: var(--s1);">Vasyl Yurchyshyn</div>
-          <div style="font-size: var(--text-sm); color: var(--accent);">Research Professor</div>
+          <div style="font-weight:600;margin-bottom:0.25rem;">Vasyl Yurchyshyn</div>
+          <div style="font-size:0.875rem;color:var(--accent);">Research Professor</div>
         </div>
         <div class="card">
-          <div style="font-weight: 600; margin-bottom: var(--s1);">Jaehyuk Kwak</div>
-          <div style="font-size: var(--text-sm); color: var(--accent);">Research Associate</div>
+          <div style="font-weight:600;margin-bottom:0.25rem;">Jaehyuk Kwak</div>
+          <div style="font-size:0.875rem;color:var(--accent);">Research Associate</div>
         </div>
       </div>
-      <p style="text-align: center; margin-top: var(--s6);"><a href="https://www.bbso.njit.edu/people.html" class="btn btn--outline" target="_blank" rel="noopener">View Full Team</a></p>
+      <p style="text-align:center;margin-top:2rem;"><a href="https://www.bbso.njit.edu/people.html" class="btn btn--outline" target="_blank" rel="noopener">View Full Team</a></p>
     </section>
 
     <section class="section section--alt" id="partners" aria-labelledby="partners-heading">
@@ -111,23 +107,11 @@
           <h2 id="partners-heading" class="section__title">Partners</h2>
           <p class="section__desc">BBSO's research is supported by partnerships with leading institutions and agencies.</p>
         </div>
-        <div class="grid grid--4" style="text-align: center;">
-          <div class="card">
-            <div style="font-weight: 600;">NJIT</div>
-            <div style="font-size: var(--text-sm); color: var(--text-muted);">New Jersey Institute of Technology</div>
-          </div>
-          <div class="card">
-            <div style="font-weight: 600;">NSF</div>
-            <div style="font-size: var(--text-sm); color: var(--text-muted);">National Science Foundation</div>
-          </div>
-          <div class="card">
-            <div style="font-weight: 600;">KASI</div>
-            <div style="font-size: var(--text-sm); color: var(--text-muted);">Korea Astronomy & Space Science Institute</div>
-          </div>
-          <div class="card">
-            <div style="font-weight: 600;">SNU</div>
-            <div style="font-size: var(--text-sm); color: var(--text-muted);">Seoul National University</div>
-          </div>
+        <div class="grid grid--4" style="text-align:center;">
+          <div class="card"><div style="font-weight:600;">NJIT</div><div style="font-size:0.875rem;color:var(--text-muted);">New Jersey Institute of Technology</div></div>
+          <div class="card"><div style="font-weight:600;">NSF</div><div style="font-size:0.875rem;color:var(--text-muted);">National Science Foundation</div></div>
+          <div class="card"><div style="font-weight:600;">KASI</div><div style="font-size:0.875rem;color:var(--text-muted);">Korea Astronomy & Space Science Institute</div></div>
+          <div class="card"><div style="font-weight:600;">SNU</div><div style="font-size:0.875rem;color:var(--text-muted);">Seoul National University</div></div>
         </div>
       </div>
     </section>
@@ -148,22 +132,10 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
-        <div>
-          <p class="footer__brand"><span>BBSO</span></p>
-          <p class="footer__desc">Operated by NJIT, conducting solar research above Big Bear Lake, California.</p>
-        </div>
-        <div>
-          <p class="footer__heading">Visit</p>
-          <nav class="footer__links"><a href="tours.html" class="footer__link">Tours</a><a href="about.html" class="footer__link">History</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a></nav>
-        </div>
-        <div>
-          <p class="footer__heading">Research</p>
-          <nav class="footer__links"><a href="research.html" class="footer__link">Projects</a><a href="research.html" class="footer__link">Instrumentation</a><a href="research.html" class="footer__link">Publications</a></nav>
-        </div>
-        <div>
-          <p class="footer__heading">Organization</p>
-          <nav class="footer__links"><a href="about.html" class="footer__link">About</a><a href="about.html#people" class="footer__link">People</a><a href="about.html#partners" class="footer__link">Partners</a></nav>
-        </div>
+        <div><p class="footer__brand"><span>BBSO</span></p><p class="footer__desc">Operated by NJIT, conducting solar research above Big Bear Lake, California.</p></div>
+        <div><p class="footer__heading">Visit</p><nav class="footer__links"><a href="tours.html" class="footer__link">Tours</a><a href="about.html" class="footer__link">History</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a></nav></div>
+        <div><p class="footer__heading">Research</p><nav class="footer__links"><a href="research.html" class="footer__link">Projects</a><a href="research.html" class="footer__link">Instrumentation</a><a href="research.html" class="footer__link">Publications</a></nav></div>
+        <div><p class="footer__heading">Organization</p><nav class="footer__links"><a href="about.html" class="footer__link">About</a><a href="about.html#people" class="footer__link">People</a><a href="about.html#partners" class="footer__link">Partners</a></nav></div>
       </div>
       <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 Big Bear Solar Observatory &middot; NJIT</p>

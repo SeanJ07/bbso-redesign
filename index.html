@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Big Bear Solar Observatory — operated by NJIT, home of the Goode Solar Telescope. Research, tours, and real-time solar observations.">
+  <meta name="description" content="Big Bear Solar Observatory — NJIT, home of the Goode Solar Telescope. Research, tours, and real-time solar observations.">
   <title>Big Bear Solar Observatory</title>
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
@@ -28,9 +28,7 @@
         <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
       </div>
       <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
       </button>
     </div>
     <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
@@ -44,7 +42,7 @@
 
   <section class="hero" aria-label="Welcome">
     <div class="hero__bg">
-      <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_4096_0171.jpg" alt="Solar corona observed in extreme ultraviolet" loading="eager">
+      <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_4096_0171.jpg" alt="Solar corona in extreme ultraviolet" loading="eager">
     </div>
     <div class="hero__content">
       <h1 class="hero__title">Watching the <span>Sun</span></h1>
@@ -62,7 +60,6 @@
   </section>
 
   <main id="main">
-
     <section class="section container" aria-labelledby="tours-heading">
       <div class="cta">
         <p class="cta__tag">2026 Season</p>
@@ -71,7 +68,7 @@
         <div class="cta__details">
           <div><span class="cta__detail-value">Free</span><span class="cta__detail-label">Admission</span></div>
           <div><span class="cta__detail-value">1 Hour</span><span class="cta__detail-label">Duration</span></div>
-          <div><span class="cta__detail-value">Select Wed.</span><span class="cta__detail-label">May – Sep</span></div>
+          <div><span class="cta__detail-value">Select Wed.</span><span class="cta__detail-label">May &ndash; Sep</span></div>
         </div>
         <a href="tours.html" class="btn btn--primary">See Tour Dates</a>
       </div>
@@ -104,16 +101,15 @@
     <section class="section container" aria-labelledby="webcam-heading">
       <div class="split">
         <div>
-          <img src="https://www.bbso.njit.edu/webcam/latest_full.jpg" alt="Current full-disk solar observation" loading="lazy" onerror="this.style.background='var(--bg-raised)';this.alt='Webcam unavailable'" style="width:100%;border-radius:var(--radius);border:1px solid var(--border);aspect-ratio:16/9;object-fit:cover;background:var(--bg-raised);">
+          <img src="https://www.bbso.njit.edu/webcam/latest_full.jpg" alt="Current full-disk solar observation from BBSO" loading="lazy" onerror="this.style.background='var(--bg-raised)';this.alt='Webcam unavailable'" style="width:100%;border-radius:var(--radius);border:1px solid var(--border);aspect-ratio:16/9;object-fit:cover;background:var(--bg-raised);">
         </div>
         <div>
           <h2 id="webcam-heading">Live Solar Observations</h2>
-          <p>Watch the Sun in near real-time through BBSO's full-disk H-alpha telescope and other instruments.</p>
-          <p><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="btn btn--outline" target="_blank" rel="noopener">View Webcam</a></p>
+          <p>Watch the Sun in near real-time through BBSO's full-disk H-alpha telescope.</p>
+          <p style="margin-top:1.5rem;"><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="btn btn--outline" target="_blank" rel="noopener">View Webcam</a></p>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -121,31 +117,19 @@
       <div class="footer__grid">
         <div>
           <p class="footer__brand"><span>BBSO</span></p>
-          <p class="footer__desc">The Big Bear Solar Observatory is operated by the New Jersey Institute of Technology, conducting solar research above Big Bear Lake, California.</p>
+          <p class="footer__desc">Operated by NJIT, conducting solar research above Big Bear Lake, California.</p>
         </div>
         <div>
           <p class="footer__heading">Visit</p>
-          <nav class="footer__links" aria-label="Visit links">
-            <a href="tours.html" class="footer__link">Public Tours</a>
-            <a href="about.html" class="footer__link">History</a>
-            <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a>
-          </nav>
+          <nav class="footer__links"><a href="tours.html" class="footer__link">Tours</a><a href="about.html" class="footer__link">History</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="footer__link" target="_blank" rel="noopener">Webcam</a></nav>
         </div>
         <div>
           <p class="footer__heading">Research</p>
-          <nav class="footer__links" aria-label="Research links">
-            <a href="research.html" class="footer__link">Projects</a>
-            <a href="research.html" class="footer__link">Instrumentation</a>
-            <a href="research.html" class="footer__link">Publications</a>
-          </nav>
+          <nav class="footer__links"><a href="research.html" class="footer__link">Projects</a><a href="research.html" class="footer__link">Instrumentation</a><a href="research.html" class="footer__link">Publications</a></nav>
         </div>
         <div>
           <p class="footer__heading">Organization</p>
-          <nav class="footer__links" aria-label="Organization links">
-            <a href="about.html" class="footer__link">About</a>
-            <a href="about.html#people" class="footer__link">People</a>
-            <a href="about.html#partners" class="footer__link">Partners</a>
-          </nav>
+          <nav class="footer__links"><a href="about.html" class="footer__link">About</a><a href="about.html#people" class="footer__link">People</a><a href="about.html#partners" class="footer__link">Partners</a></nav>
         </div>
       </div>
       <div class="footer__bottom">
@@ -154,7 +138,6 @@
       </div>
     </div>
   </footer>
-
   <script src="js/nav.js"></script>
 </body>
 </html>

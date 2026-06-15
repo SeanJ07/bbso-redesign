@@ -1,59 +1,42 @@
-/* ===== BBSO Redesign — Hero ===== */
-
+/* ===== BBSO — Hero ===== */
 .hero {
   position: relative; min-height: 85vh;
   display: flex; align-items: center;
   padding-top: 64px; overflow: hidden;
+  background: var(--text-bright);
 }
 
-.hero__bg {
-  position: absolute; inset: 0; z-index: 0;
-}
-
-.hero__bg img {
-  width: 100%; height: 100%; object-fit: cover; object-position: center;
-}
-
+.hero__bg { position: absolute; inset: 0; z-index: 0; }
+.hero__bg img { width: 100%; height: 100%; object-fit: cover; }
 .hero__bg::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(10,14,26,0.6) 0%, rgba(10,14,26,0.88) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%);
 }
 
 .hero__content {
   position: relative; z-index: 1;
-  max-width: var(--max-w); margin: 0 auto; padding: var(--s20) var(--s6);
-  width: 100%;
+  max-width: var(--max-w); margin: 0 auto; padding: 5rem 1.5rem; width: 100%;
 }
 
-.hero__title {
-  max-width: 16ch; margin-bottom: var(--s6);
-}
-
+.hero__title { max-width: 14ch; margin-bottom: 1.5rem; color: #fff; }
 .hero__title span { color: var(--accent); }
 
 .hero__desc {
-  color: var(--text-muted); font-size: var(--text-lg);
-  max-width: 48ch; margin-bottom: var(--s8);
+  color: rgba(255,255,255,0.7); font-size: 1.125rem;
+  max-width: 48ch; margin-bottom: 2rem;
 }
 
-.hero__actions {
-  display: flex; flex-wrap: wrap; gap: var(--s4); align-items: center;
-}
+.hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 
 .hero__stats {
-  display: flex; gap: var(--s10); margin-top: var(--s16);
-  padding-top: var(--s8); border-top: 1px solid var(--border);
+  display: flex; gap: 3rem; margin-top: 4rem;
+  padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15);
 }
 
-.hero__stat-value {
-  font-size: var(--text-2xl); font-weight: 700; color: var(--accent); display: block;
-}
-
-.hero__stat-label {
-  font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--s1);
-}
+.hero__stat-value { font-size: 1.5rem; font-weight: 700; color: var(--accent); display: block; }
+.hero__stat-label { font-size: 0.875rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem; }
 
 @media (max-width: 767px) {
   .hero { min-height: 75vh; }
-  .hero__stats { gap: var(--s6); flex-wrap: wrap; }
+  .hero__stats { gap: 2rem; flex-wrap: wrap; }
 }
