@@ -1,19 +1,31 @@
-/* ===== BBSO Mobile-Fix — Tokens ===== */
+/* ===== BBSO 1:1 Replica — Design Tokens ===== */
 :root {
-  /* Match original site colors */
-  --bg: #737362;             /* Original body bg */
-  --bg-content: #ebeccd;     /* Original nav/content bg */
-  --bg-white: #ffffff;        /* Content iframe bg */
-  --red: #990000;             /* Original header/banner red */
-  --red-dark: #7a0000;
-  --nav-bg: #000000;          /* Original nav black */
+  /* Exact colors from original site */
+  --bg: #737362;
+  --bg-content: #ebeccd;
+  --bg-header: #d6d7b7;
+  --nav-bg: #000000;
+  --nav-hover: #d6d7b7;
+  --dropdown-bg: #ebeccd;
+  --dropdown-hover: #d6d7b7;
   --text: #000000;
-  --text-light: #ffffff;
-  --text-muted: #333333;
-  --link: #ffffff;
-  --border: #666666;
+  --text-white: #ffffff;
+  --link: darkblue;
+  --link-white: #ffffff;
+  --red: darkred;
+  --border: #000000;
+  --border-light: #ffffff;
 
-  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --max-w: 860px;
-  --radius: 4px;
+  /* Typography matching original */
+  --font: "Segoe UI", sans-serif;
+  --font-nav: "Bitstream Vera Sans", "Segoe UI", sans-serif;
+  --text-xs: 10px;
+  --text-sm: 12px;
+  --text-base: 12px;
+  --text-md: 14px;
+  --text-lg: 16px;
+
+  /* Layout matching original */
+  --max-w: 848px;
+  --radius: 0;
 }
