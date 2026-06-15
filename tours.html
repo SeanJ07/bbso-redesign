@@ -3,121 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tours — Big Bear Solar Observatory</title>
+  <title>BBSO Public Tours</title>
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/pages.css">
 </head>
-<body style="background:var(--bg);">
+<body>
   <a href="#main" class="skip-link">Skip to main content</a>
-
-  <div class="banner"><div class="banner__inner"><a href="index.html"><img class="banner__img" src="https://www.bbso.njit.edu/Icons/banner.png" alt="Big Bear Solar Observatory" width="848" height="113"></a></div></div>
-
+  <div class="banner"><div class="banner__inner"><a href="index.html"><img src="https://www.bbso.njit.edu/Icons/banner.png" alt="Big Bear Solar Observatory" width="848" height="113"></a></div></div>
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <div class="nav__links">
-        <a href="index.html" class="nav__link">Home</a>
-        <a href="tours.html" class="nav__link nav__link--active">Tours</a>
-        <a href="research.html" class="nav__link">Research</a>
-        <a href="about.html" class="nav__link">About BBSO</a>
-        <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
-      </div>
-      <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu">
-        <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
-      </button>
+      <ul class="nav__links">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a><ul class="nav__dropdown"><li><a href="https://www.bbso.njit.edu/home.html" class="nav__dropdown-link">BBSO</a></li><li><a href="https://centers.njit.edu/cstr" class="nav__dropdown-link" target="_blank" rel="noopener">Center for Solar-Terrestrial Research</a></li><li><a href="https://physics.njit.edu/" class="nav__dropdown-link" target="_blank" rel="noopener">NJIT Physics Department</a></li><li><a href="https://www.njit.edu/" class="nav__dropdown-link" target="_blank" rel="noopener">NJIT</a></li></ul></li>
+        <li class="nav__item"><a href="research.html" class="nav__link">Projects</a><ul class="nav__dropdown"><li class="nav__dropdown-section">Instrumentation Projects</li><li><a href="https://www.bbso.njit.edu/nst_project.html" class="nav__dropdown-link">GST General Info</a></li><li><a href="https://www.bbso.njit.edu/nst_instr_list.html" class="nav__dropdown-link">GST Instruments</a></li><li class="nav__dropdown-section">Science Projects</li><li><a href="https://www.bbso.njit.edu/intermitt.html" class="nav__dropdown-link">Intermittency</a></li><li><a href="https://www.bbso.njit.edu/oscillations.html" class="nav__dropdown-link">Oscillations</a></li><li><a href="https://www.bbso.njit.edu/spw_bbso.html" class="nav__dropdown-link">Space Weather</a></li><li><a href="https://www.bbso.njit.edu/Research/FDHA/" class="nav__dropdown-link">Full Disk H&alpha; Observations</a></li><li><a href="https://www.bbso.njit.edu/Earthshine_webpage.html" class="nav__dropdown-link">Earthshine</a></li><li class="nav__dropdown-section">Our Publications</li><li><a href="https://ui.adsabs.harvard.edu/public-libraries/IBl9h5Y7TXWdf_A4CCKCMA" class="nav__dropdown-link" target="_blank" rel="noopener">GST Science Papers (ADS List)</a></li><li><a href="https://www.bbso.njit.edu/gst_instr.html" class="nav__dropdown-link">GST Instr. Papers</a></li><li><a href="https://www.bbso.njit.edu/all_bbso.html" class="nav__dropdown-link">BBSO Publications Since 2009</a></li></ul></li>
+        <li class="nav__item"><a href="people.html" class="nav__link">People</a><ul class="nav__dropdown"><li><a href="https://www.bbso.njit.edu/newstaff.html" class="nav__dropdown-link">BBSO Staff</a></li><li><a href="https://www.bbso.njit.edu/Local/index.html" class="nav__dropdown-link">Local Pages</a></li><li><a href="https://www.bbso.njit.edu/nst_local/index.html" class="nav__dropdown-link">GST Local Pages</a></li><li><a href="https://www.bbso.njit.edu/webmail" class="nav__dropdown-link">Web Mail</a></li></ul></li>
+        <li class="nav__item"><a href="operations.html" class="nav__link">Operations</a><ul class="nav__dropdown"><li><a href="https://www.bbso.njit.edu/ipc/GSTObsProposal.html" class="nav__dropdown-link" target="_blank" rel="noopener">GST Observing Proposal Form</a></li><li><a href="https://www.bbso.njit.edu/cgi-bin/ActivityReport" class="nav__dropdown-link">Activity Report</a></li><li><a href="https://www.bbso.njit.edu/bbso_seminar.html" class="nav__dropdown-link">BBSO Seminars</a></li><li><a href="https://www.bbso.njit.edu/gst_press.html" class="nav__dropdown-link">Press Release &amp; Media</a></li><li><a href="https://www.bbso.njit.edu/gst_publ.html" class="nav__dropdown-link">GST Science Papers</a></li><li><a href="https://www.bbso.njit.edu/gst_instr.html" class="nav__dropdown-link">GST Instr. Papers</a></li></ul></li>
+        <li class="nav__item"><a href="data.html" class="nav__link">Data</a><ul class="nav__dropdown"><li><a href="https://www.bbso.njit.edu/cgi-bin/LatestImages" class="nav__dropdown-link" target="_blank" rel="noopener">Latest Images</a></li><li><a href="https://ftp.bbso.njit.edu/pub/archive/" class="nav__dropdown-link">Online FTP Data Archive</a></li><li><a href="https://www.bbso.njit.edu/~vayur/NST_catalog/" class="nav__dropdown-link" target="_blank" rel="noopener">GST Data Catalog</a></li><li><a href="https://www.bbso.njit.edu/~vayur/nst_requests2/" class="nav__dropdown-link" target="_blank" rel="noopener">GST Data Request Form</a></li><li><a href="https://www.bbso.njit.edu/Research/FDHA/ha_1min.html" class="nav__dropdown-link">H&alpha; Full Disk Live</a></li><li><a href="https://www.bbso.njit.edu/Research/FDHA/" class="nav__dropdown-link" target="_blank" rel="noopener">BBSO Full Disk H&alpha; Page</a></li><li><a href="https://www.bbso.njit.edu/nst_gallery.html" class="nav__dropdown-link" target="_blank" rel="noopener">GST Gallery</a></li><li><a href="https://www.bbso.njit.edu/cgi-bin/Logs" class="nav__dropdown-link">BBSO Observing Logs</a></li><li><a href="https://www.bbso.njit.edu/gst_datapolicy.html" class="nav__dropdown-link">Data Policy</a></li></ul></li>
+        <li class="nav__item"><a href="partners.html" class="nav__link">Partners</a><ul class="nav__dropdown"><li><a href="https://nso.edu/telescopes/nisp/gong/" class="nav__dropdown-link" target="_blank" rel="noopener">GONG</a></li><li><a href="https://nso.edu/telescopes/nisp/solis" class="nav__dropdown-link" target="_blank" rel="noopener">SOLIS</a></li><li><a href="http://solarb.msfc.nasa.gov/" class="nav__dropdown-link" target="_blank" rel="noopener">Hinode</a></li><li><a href="http://hmi.stanford.edu/" class="nav__dropdown-link" target="_blank" rel="noopener">SDO/HMI</a></li><li><a href="https://www.kasi.re.kr/eng/index" class="nav__dropdown-link" target="_blank" rel="noopener">KASI</a></li></ul></li>
+        <li class="nav__item"><a href="about.html" class="nav__link">About BBSO</a><ul class="nav__dropdown"><li><a href="https://www.bbso.njit.edu/gst_press.html" class="nav__dropdown-link">BBSO in Media</a></li><li><a href="https://www.bbso.njit.edu/bbso_brochure.html" class="nav__dropdown-link">BBSO Posters</a></li><li><a href="https://www.bbso.njit.edu/bbso_drive.html" class="nav__dropdown-link">Visiting BBSO</a></li><li><a href="https://www.bbso.njit.edu/hist_index.html" class="nav__dropdown-link">BBSO Observatory History</a></li><li><a href="tours.html" class="nav__dropdown-link">BBSO Public Tours</a></li><li><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__dropdown-link">BBSO WebCams</a></li><li><a href="https://www.bbso.njit.edu/np/webcam/causeway" class="nav__dropdown-link">BBSO WebCam Movie</a></li><li><a href="https://www.bbso.njit.edu/faq.html" class="nav__dropdown-link">FAQ</a></li><li><a href="https://www.bbso.njit.edu/contact.html" class="nav__dropdown-link">Contact Us</a></li></ul></li>
+      </ul>
+      <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="mobile-menu"><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span></button>
     </div>
     <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
-      <a href="index.html" class="nav__link">Home</a>
-      <a href="tours.html" class="nav__link nav__link--active">Tours</a>
-      <a href="research.html" class="nav__link">Research</a>
-      <a href="about.html" class="nav__link">About BBSO</a>
-      <a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__link" target="_blank" rel="noopener">Webcam</a>
+      <a href="index.html" class="nav__mobile-link">Home</a><div class="nav__mobile-section">Projects</div><a href="https://www.bbso.njit.edu/nst_project.html" class="nav__mobile-link">GST General Info</a><a href="https://www.bbso.njit.edu/nst_instr_list.html" class="nav__mobile-link">GST Instruments</a><a href="https://www.bbso.njit.edu/intermitt.html" class="nav__mobile-link">Intermittency</a><a href="https://www.bbso.njit.edu/oscillations.html" class="nav__mobile-link">Oscillations</a><a href="https://www.bbso.njit.edu/spw_bbso.html" class="nav__mobile-link">Space Weather</a><div class="nav__mobile-section">People</div><a href="https://www.bbso.njit.edu/newstaff.html" class="nav__mobile-link">BBSO Staff</a><div class="nav__mobile-section">Operations</div><a href="https://www.bbso.njit.edu/bbso_seminar.html" class="nav__mobile-link">BBSO Seminars</a><a href="https://www.bbso.njit.edu/gst_press.html" class="nav__mobile-link">Press Release &amp; Media</a><div class="nav__mobile-section">Data</div><a href="https://www.bbso.njit.edu/cgi-bin/LatestImages" class="nav__mobile-link">Latest Images</a><a href="https://ftp.bbso.njit.edu/pub/archive/" class="nav__mobile-link">FTP Data Archive</a><a href="https://www.bbso.njit.edu/Research/FDHA/ha_1min.html" class="nav__mobile-link">H&alpha; Full Disk Live</a><div class="nav__mobile-section">Partners</div><a href="https://nso.edu/telescopes/nisp/gong/" class="nav__mobile-link">GONG</a><a href="https://www.kasi.re.kr/eng/index" class="nav__mobile-link">KASI</a><div class="nav__mobile-section">About BBSO</div><a href="https://www.bbso.njit.edu/hist_index.html" class="nav__mobile-link">Observatory History</a><a href="tours.html" class="nav__mobile-link">Public Tours</a><a href="https://www.bbso.njit.edu/bbso_webcams.html" class="nav__mobile-link">WebCams</a><a href="https://www.bbso.njit.edu/faq.html" class="nav__mobile-link">FAQ</a><a href="https://www.bbso.njit.edu/contact.html" class="nav__mobile-link">Contact Us</a>
     </div>
   </nav>
 
-  <div class="page-header">
-    <p class="page-header__tag">Visit Us</p>
-    <h1 class="page-header__title">Public Tours</h1>
-    <p class="page-header__desc">Walk among world-class solar telescopes on the shores of Big Bear Lake. Free guided tours give you an inside look at solar research.</p>
-  </div>
+  <main id="main"><div class="content-area">
+    <span class="hred">BBSO Tours</span>
+    <p>Starting May 28 2026 and until Sept 3 2026, the Big Bear Solar Observatory will be offering tours in a limited capacity. Tours will be on May 28, June 11, July 9, July 23, Aug 6, Aug 20, and Sept 3. Please note that <span class="hred">the tour is not recommended for children under age of 5.</span></p>
+    <p>Tours will start at 2pm and last for one hour. Tours are <span class="h10bold">FREE</span> but <span class="h10bold">donations are strongly encouraged.</span></p>
+    <p>All 2026 tours are fully booked. There might be cancelations, please check this <a href="https://forms.gle/bbso-tours">online form</a> regularly, or contact the office at 909-866-5791x210, or email at <img src="https://www.bbso.njit.edu/Icons/emailtour.gif" alt="tour email" style="display:inline;vertical-align:middle;">.</p>
 
-  <main id="main" style="background:var(--bg-content);">
-    <div class="content-area">
-
-      <div class="alert">
-        <strong>All 2026 tours are currently fully booked.</strong> Cancellations may open spots. Check the <a href="https://forms.gle/bbso-tours" target="_blank" rel="noopener">online form</a> regularly, or call <a href="tel:9098665791" style="color:#990000;">909-866-5791 ext. 210</a>.
+    <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:250px;">
+        <span class="hred">Feel free to check out some of our virtual tours.</span>
+        <p>Big Bear Solar Observatory is owned and operated by the New Jersey Institute of Technology, since 1997, and as such it is private property. We have partnered with the Big Bear Valley Astronomical Society to provide docent tour guides and have now begun scheduling tours for the public.</p>
       </div>
-
-      <div class="info-cards" style="margin-bottom:1.5rem;">
-        <div class="info-card">
-          <div class="info-card__value">Free</div>
-          <div class="info-card__label">Admission</div>
-        </div>
-        <div class="info-card">
-          <div class="info-card__value">1 Hour</div>
-          <div class="info-card__label">Duration</div>
-        </div>
-        <div class="info-card">
-          <div class="info-card__value">Big Bear Lake, CA</div>
-          <div class="info-card__label">Location</div>
-        </div>
+      <div style="flex:1; min-width:250px;">
+        <span class="hblk">Visiting</span>
+        <p>The observatory is 1/2 mile west of the Discovery Center on Hwy 38/North Shore Drive. For more detailed directions <a href="https://www.bbso.njit.edu/bbso_drive.html">click here</a>.</p>
+        <p>Please understand that due to the limitations of our docent volunteers and the physical size of the observatory, tours must remain small and limited in size. All attending must be able to walk 1000' down and back on a gravel road as well as up and down three flights of stairs to access the telescope.</p>
       </div>
-
-      <div class="dates-table" style="margin-bottom:1.5rem;">
-        <div class="dates-table__head">
-          <span class="dates-table__title">2026 Tour Dates</span>
-          <span class="dates-table__badge">All Full</span>
-        </div>
-        <table>
-          <thead><tr><th>Date</th><th>Day</th><th>Time</th><th>Status</th></tr></thead>
-          <tbody>
-            <tr><td><strong>May 28</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
-            <tr><td><strong>June 11</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
-            <tr><td><strong>July 9</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
-            <tr><td><strong>July 23</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
-            <tr><td><strong>August 6</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
-            <tr><td><strong>August 20</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
-            <tr><td><strong>September 3</strong></td><td>Wednesday</td><td>2:00 PM</td><td><span class="status--full">Fully Booked</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p style="font-size:0.95rem;font-weight:bold;margin-bottom:0.5rem;margin-top:1.5rem;">What to Know</p>
-
-      <div class="grid grid--2" style="margin-bottom:1.5rem;">
-        <div class="card">
-          <p class="card__title">Physical Requirements</p>
-          <p class="card__text">Visitors must walk 1,000 feet on a gravel road and navigate three flights of stairs to access the telescope. Not recommended for children under 5.</p>
-        </div>
-        <div class="card">
-          <p class="card__title">Finding the Observatory</p>
-          <p class="card__text">Half a mile west of the Big Bear Discovery Center on Hwy 38 (North Shore Drive). Private property; visits by guided tour only.</p>
-        </div>
-        <div class="card">
-          <p class="card__title">Donations Welcome</p>
-          <p class="card__text">Tours are free, but donations are strongly encouraged to support outreach and docent programs.</p>
-        </div>
-        <div class="card">
-          <p class="card__title">Can't Make It?</p>
-          <p class="card__text">Watch the Sun in near real-time through our <a href="https://www.bbso.njit.edu/bbso_webcams.html" target="_blank" rel="noopener" style="color:#990000;">live webcam</a>.</p>
-        </div>
-      </div>
-
-      <p style="font-size:0.95rem;font-weight:bold;margin-bottom:0.25rem;">Questions?</p>
-      <p style="font-size:0.85rem;color:#333;">Call <strong style="color:#990000;">909-866-5791 ext. 210</strong></p>
-
     </div>
-  </main>
 
-  <div style="background:var(--bg-content);">
-    <div class="content-area" style="border-top:1px solid #999;padding-top:0.75rem;">
-      <p style="font-size:0.7rem;color:#666;"><strong>Acknowledgements:</strong> BBSO operation is supported by US NSF AGS-2309939 grant and NJIT. GST operation is partly supported by KASI and Seoul National University.</p>
-      <p style="font-size:0.7rem;color:#666;margin-top:0.25rem;">&copy; 2026 Big Bear Solar Observatory &middot; NJIT</p>
+    <div style="text-align:center; padding-top:8px; border-top:1px solid #999; margin-top:16px;">
+      <div class="footer-logos">
+        <a href="http://www.nsf.edu/" target="_blank" rel="noopener"><img src="https://www.bbso.njit.edu/Icons/nsf.png" alt="NSF" width="60" style="display:inline;"></a>
+        <span class="h10bold">Acknowledgements: BBSO operation is supported by US NSF AGS-2309939 grant and New Jersey Institute of Technology. GST operation is partly supported by the Korea Astronomy and Space Science Institute and the Seoul National University.</span>
+        <a href="http://www.njit.edu/" target="_blank" rel="noopener"><img src="https://www.bbso.njit.edu/Icons/njit_seal.png" alt="NJIT" width="50" style="display:inline;"></a>
+      </div>
     </div>
-  </div>
-
+  </div></main>
   <script src="js/nav.js"></script>
 </body>
 </html>
