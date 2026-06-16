@@ -44,7 +44,7 @@ body {
   font-family: var(--font);
   font-size: var(--text-base);
   color: var(--text);
-  background: var(--bg);
+  background: var(--bg-content);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -79,7 +79,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ===== Banner ===== */
 .banner { background: var(--nav-bg); }
-.banner__inner { padding: 0 2rem; }
+.banner__inner { padding: 0; }
 .banner__inner img { width: 100%; height: auto; display: block; }
 
 /* ===== Navigation ===== */
