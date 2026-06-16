@@ -32,7 +32,7 @@
   --text-lg: 1.5rem;      /* 24px */
   --text-xl: 1.75rem;     /* 28px */
 
-  --max-w: 1500px;
+  --max-w: none;
   --radius: 4px;
 }
 
@@ -79,7 +79,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ===== Banner ===== */
 .banner { background: var(--nav-bg); }
-.banner__inner { max-width: var(--max-w); margin: 0 auto; }
+.banner__inner { padding: 0 2rem; }
 .banner__inner img { width: 100%; height: auto; display: block; }
 
 /* ===== Navigation ===== */
@@ -90,9 +90,8 @@ p:last-child { margin-bottom: 0; }
   position: sticky; top: 0; z-index: 50;
 }
 .nav__inner {
-  max-width: var(--max-w); margin: 0 auto;
+  padding: 0 2rem;
   display: flex; align-items: center; height: auto; min-height: 48px;
-  padding: 0 1rem;
 }
 .nav__links { display: flex; list-style: none; width: 100%; margin: 0; padding: 0; gap: 0; }
 .nav__item { position: relative; flex: 1; }
@@ -163,8 +162,7 @@ p:last-child { margin-bottom: 0; }
 /* ===== Main Content ===== */
 .content-area {
   background: var(--bg-content);
-  max-width: var(--max-w); margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
   font-size: var(--text-base); color: var(--text);
   line-height: 1.65;
 }
@@ -377,8 +375,8 @@ p:last-child { margin-bottom: 0; }
 
 /* Footer */
 .site-footer {
-  background: var(--bg-content); max-width: var(--max-w); margin: 0 auto;
-  padding: 1.5rem; text-align: center; font-size: var(--text-sm);
+  background: var(--bg-content);
+  padding: 1.5rem 3rem; text-align: center; font-size: var(--text-sm);
   border-top: 2px solid #999; margin-top: 2rem;
 }
 .footer-logos {
